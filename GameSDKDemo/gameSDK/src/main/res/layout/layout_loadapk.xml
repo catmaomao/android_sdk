@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/HY_GameSDK_552PX"
+    android:layout_height="300dp"
+    android:background="@color/hy_hybgColor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/hy_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_32PX"
+        android:background="@color/hy_bg_color_blue" >
+
+        <ProgressBar
+            android:id="@+id/down_pb"
+            style="@style/ProgressBar_horizontal_hy"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/HY_GameSDK_50PX"
+            android:layout_margin="1dp"
+            android:max="100" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/HY_GameSDK_70PX"
+        android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_30PX" >
+
+        <TextView
+            android:id="@+id/tv_loadingsize"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/hy_text_title" />
+
+        <TextView
+            android:id="@+id/tv_allsize"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/tv_loadingsize"
+            android:text="@string/hy_text_zzxz"
+            android:textColor="@color/hy_button_text" />
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:text="@string/hy_text_bf0"
+            android:textColor="@color/hy_text_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/hy_title_line_bellow" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/HY_GameSDK_94PX"
+        android:background="#FFFFFFFF"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/hy_btn_text_white"
+            android:text="@string/hy_text_btn_qx"
+            android:textColor="@color/hy_button_text"
+            android:textSize="@dimen/HY_GameSDK_28PX" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/hy_button_text" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_install"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/hy_btn_text_white"
+            android:text="@string/hy_text_btn_anzhuang"
+            android:textColor="@color/hy_button_text"
+            android:textSize="@dimen/HY_GameSDK_28PX"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

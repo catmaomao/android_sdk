@@ -1,0 +1,4 @@
+#Thu Dec 07 15:47:41 CST 2017
+base.0=/Users/mashaohu/zhiyou/GameSDKDemo/gameSDKDemo/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

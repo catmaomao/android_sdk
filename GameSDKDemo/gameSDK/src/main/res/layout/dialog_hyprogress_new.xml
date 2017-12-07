@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+    <!-- android:background="@color/hy_hybgColor"-->
+
+        <ImageView
+            android:id="@+id/loadingImageView"
+            android:layout_width="@dimen/HY_GameSDK_80PX"
+            android:layout_height="@dimen/HY_GameSDK_80PX"
+            android:layout_marginTop="@dimen/HY_GameSDK_30PX"
+            android:layout_marginBottom="@dimen/HY_GameSDK_10PX"
+            android:background="@anim/progress_round" />
+
+        <TextView
+            android:id="@+id/tv_loadingmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/HY_GameSDK_20PX"
+            android:layout_marginBottom="@dimen/HY_GameSDK_20PX"
+            android:background="@color/hy_hybgProColor"
+            android:text="小酷正在催促信号君"
+            android:textColor="@color/hy_loading_bar_text"
+            android:textSize="15sp" />
+
+</LinearLayout>

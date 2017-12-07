@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc9988"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username" />
+
+            <Button
+                android:id="@+id/btn_change"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="changeOnClick"
+                android:text="切换帐号" />
+
+            <Button
+                android:id="@+id/btn_clean"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cleanOnClick"
+                android:text="回到初始安装状态，方便测试，不对外开放" />
+
+            <Button
+                android:id="@+id/go_pay_bt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="payOnClick"
+                android:text="去支付" />
+
+            <Button
+                android:id="@+id/btn_open_float"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openFloatOnClick"
+                android:text="开启悬浮窗" />
+
+            <Button
+                android:id="@+id/btn_close_float"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="closeFloatOnClick"
+                android:text="关闭悬浮窗" />
+
+            <Button
+                android:id="@+id/wx_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="wxLogin"
+                android:text="微信登录" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="qqLogin"
+                android:text="qq登录" />
+
+            <Button
+                android:id="@+id/weibo_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="weiboLogin"
+                android:text="微博登录" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="share"
+                android:text="分享集合" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

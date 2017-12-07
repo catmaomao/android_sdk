@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nanlus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/HY_GameSDK_552PX"
+    android:layout_height="300dp"
+    android:background="@color/hy_hybgColor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/hy_title" />
+
+    <include layout="@layout/hy_tv_error_include" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/HY_GameSDK_50PX"
+        android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_20PX"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="@dimen/HY_GameSDK_280PX"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/HY_GameSDK_20PX"
+            android:background="@color/color_trans"
+            android:cursorVisible="false"
+            android:gravity="center_vertical"
+            android:hint="@string/hy_text_hint_qsrsjh"
+            android:inputType="phone"
+            android:textColor="@color/hy_button_text"
+            android:textColorHint="@color/hy_light_gray"
+            android:textSize="@dimen/HY_GameSDK_26PX" />
+
+        <Button
+            android:id="@+id/btn_re_send"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/HY_GameSDK_50PX"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/code_shape"
+            android:textColor="@color/hy_btn_text_yellow"
+            android:textSize="@dimen/HY_GameSDK_28PX" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/HY_GameSDK_30PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_30PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_10PX"
+        android:background="@color/hy_light_gray" />
+
+    <EditText
+        android:id="@+id/et_verify_no"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/HY_GameSDK_50PX"
+        android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_10PX"
+        android:background="@color/color_trans"
+        android:cursorVisible="false"
+        android:gravity="center_vertical"
+        android:hint="@string/hy_text_hint_qsrdxyzm"
+        android:inputType="number"
+        android:textColor="@color/hy_button_text"
+        android:textColorHint="@color/hy_light_gray"
+        android:textSize="@dimen/HY_GameSDK_26PX" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/HY_GameSDK_30PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_30PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_10PX"
+        android:background="@color/hy_light_gray" />
+
+    <EditText
+        android:id="@+id/et_new_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/HY_GameSDK_50PX"
+        android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_10PX"
+        android:background="@color/color_trans"
+        android:cursorVisible="false"
+        android:gravity="center_vertical"
+        android:hint="密码请输入6~16位字母+数字组合"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="@color/hy_button_text"
+        android:textColorHint="@color/hy_light_gray"
+        android:textSize="@dimen/HY_GameSDK_26PX" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/HY_GameSDK_30PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_30PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_10PX"
+        android:background="@color/hy_light_gray" />
+
+    <EditText
+        android:id="@+id/et_new_pwd_again"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/HY_GameSDK_50PX"
+        android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_10PX"
+        android:background="@color/color_trans"
+        android:cursorVisible="false"
+        android:gravity="center_vertical"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="@color/hy_button_text"
+        android:textColorHint="@color/hy_light_gray"
+        android:textSize="@dimen/HY_GameSDK_26PX" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/HY_GameSDK_30PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_30PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_10PX"
+        android:background="@color/hy_light_gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/HY_GameSDK_30PX"
+        android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_30PX"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_find_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/HY_GameSDK_70PX"
+            android:background="@color/hy_btn_text_yellow"
+            android:text="@string/hy_text_queding"
+            android:textColor="@color/hy_btn_text_white"
+            android:textSize="@dimen/HY_GameSDK_32PX" />
+    </LinearLayout>
+
+</LinearLayout>

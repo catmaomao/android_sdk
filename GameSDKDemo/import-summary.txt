@@ -1,0 +1,108 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From GameSDK:
+* .gitignore
+* .idea/
+* .idea/GameSDK.iml
+* .idea/encodings.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/workspace.xml
+* ic_launcher-web.png
+* proguard-project.txt
+From GameSDKDemo:
+* .gitignore
+* ic_launcher-web.png
+* proguard-project.txt
+From portal-sdk:
+* .DS_Store
+* .gitignore
+* build.gradle
+* build.xml
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In portal-sdk:
+* AndroidManifest.xml => portalsdk/src/main/AndroidManifest.xml
+* assets/ => portalsdk/src/main/assets
+* libs/CSGameSDK2.0.1.jar => portalsdk/libs/CSGameSDK2.0.1.jar
+* libs/android-support-multidex.jar => portalsdk/libs/android-support-multidex.jar
+* res/ => portalsdk/src/main/res/
+* src/ => portalsdk/src/main/java/
+* src/.DS_Store => portalsdk/src/main/resources/.DS_Store
+* src/com/.DS_Store => portalsdk/src/main/resources/com/.DS_Store
+In GameSDK:
+* AndroidManifest.xml => gameSDK/src/main/AndroidManifest.xml
+* assets/ => gameSDK/src/main/assets/
+* libs/FeeChargeAPI.jar => gameSDK/libs/FeeChargeAPI.jar
+* libs/alipaySdk-20160809.jar => gameSDK/libs/alipaySdk-20160809.jar
+* libs/arm64-v8a/libweibosdkcore.so => gameSDK/src/main/jniLibs/arm64-v8a/libweibosdkcore.so
+* libs/armeabi-v7a/libweibosdkcore.so => gameSDK/src/main/jniLibs/armeabi-v7a/libweibosdkcore.so
+* libs/armeabi/libweibosdkcore.so => gameSDK/src/main/jniLibs/armeabi/libweibosdkcore.so
+* libs/ipp-rome-2.1.0.jar => gameSDK/libs/ipp-rome-2.1.0.jar
+* libs/libammsdk.jar => gameSDK/libs/libammsdk.jar
+* libs/mips/libweibosdkcore.so => gameSDK/src/main/jniLibs/mips/libweibosdkcore.so
+* libs/mips64/libweibosdkcore.so => gameSDK/src/main/jniLibs/mips64/libweibosdkcore.so
+* libs/mta-sdk-1.6.2.jar => gameSDK/libs/mta-sdk-1.6.2.jar
+* libs/open_sdk_r5793.jar => gameSDK/libs/open_sdk_r5793.jar
+* libs/trobotexternalinterface.jar => gameSDK/libs/trobotexternalinterface.jar
+* libs/weibosdk.jar => gameSDK/libs/weibosdk.jar
+* libs/x86/libweibosdkcore.so => gameSDK/src/main/jniLibs/x86/libweibosdkcore.so
+* libs/x86_64/libweibosdkcore.so => gameSDK/src/main/jniLibs/x86_64/libweibosdkcore.so
+* res/ => gameSDK/src/main/res/
+* src/ => gameSDK/src/main/java/
+* src/com/heyijoy/gamesdk/.DS_Store => gameSDK/src/main/resources/com/heyijoy/gamesdk/.DS_Store
+In GameSDKDemo:
+* AndroidManifest.xml => gameSDKDemo/src/main/AndroidManifest.xml
+* assets/ => gameSDKDemo/src/main/assets/
+* lint.xml => gameSDKDemo/lint.xml
+* res/ => gameSDKDemo/src/main/res/
+* src/ => gameSDKDemo/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

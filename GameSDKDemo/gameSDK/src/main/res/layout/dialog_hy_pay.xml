@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/hy_pay_params_layout"
+        android:layout_width="@dimen/HY_GameSDK_664PX"
+        android:layout_height="wrap_content"
+        android:background="#FfFfFf"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/HY_GameSDK_30PX" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/HY_GameSDK_36PX" >
+
+                <TextView
+                    android:id="@+id/hy_pay_product_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:singleLine="true"
+                    android:text="@string/hy_text_0xingzuan"
+                    android:textColor="@color/hy_button_text"
+                    android:textSize="@dimen/HY_GameSDK_28PX" />
+
+                <ImageView
+                    android:id="@+id/hy_pay_icon_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/HY_GameSDK_36PX"
+                    android:paddingRight="@dimen/HY_GameSDK_36PX"
+                    android:src="@drawable/nav_icon_close" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/hy_pay_amount_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/HY_GameSDK_10PX"
+                android:text="@string/hy_text_000.00"
+                android:textColor="#ff9c00"
+                android:textSize="@dimen/HY_GameSDK_44PX" />
+
+            <!-- 微信支付 start -->
+
+            <RelativeLayout
+                android:id="@+id/hy_pay_select_wxpay_bt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/HY_GameSDK_100PX"
+                android:layout_marginTop="@dimen/HY_GameSDK_10PX"
+                android:background="@drawable/hy_btn_white_selector"
+                android:paddingLeft="@dimen/HY_GameSDK_36PX"
+                android:paddingRight="@dimen/HY_GameSDK_36PX" >
+
+                <ImageView
+                    android:id="@+id/hy_pay_wxpay_logo_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/hy_pay_logo_wxpay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/hy_pay_wxpay_logo_img"
+                    android:text="微信支付"
+                    android:textColor="@color/hy_button_text"
+                    android:textSize="@dimen/HY_GameSDK_28PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/nav_icon_right" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+                    android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+                    android:background="@color/hy_title_line" >
+                </TextView>
+            </RelativeLayout>
+
+            <!-- 微信支付 end -->
+
+
+            <!-- 支付宝支付 -->
+
+            <RelativeLayout
+                android:id="@+id/hy_pay_select_alipay_bt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/HY_GameSDK_100PX"
+                android:background="@drawable/hy_btn_white_selector"
+                android:paddingLeft="@dimen/HY_GameSDK_36PX"
+                android:paddingRight="@dimen/HY_GameSDK_36PX" >
+
+                <ImageView
+                    android:id="@+id/iv_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/hy_pay_logo_alipay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_alipay"
+                    android:text="@string/hy_text_alipay"
+                    android:textColor="@color/hy_button_text"
+                    android:textSize="@dimen/HY_GameSDK_28PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/nav_icon_right" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+                    android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+                    android:background="@color/hy_title_line" >
+                </TextView>
+            </RelativeLayout>
+
+            <!-- 银联支付 -->
+
+            <LinearLayout
+                android:id="@+id/hy_pay_select_unionpay_bt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/HY_GameSDK_100PX"
+                android:background="@drawable/hy_btn_white_selector"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/HY_GameSDK_36PX"
+                android:paddingRight="@dimen/HY_GameSDK_36PX" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/HY_GameSDK_100PX" >
+
+                    <ImageView
+                        android:id="@+id/iv_uniconpay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/hy_pay_logo_unionpay" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_uniconpay"
+                        android:text="@string/hy_text_uniconpay"
+                        android:textColor="@color/hy_button_text"
+                        android:textSize="@dimen/HY_GameSDK_28PX" />
+
+                    <ImageView
+                        android:id="@+id/iv_nav_icon_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dip"
+                        android:background="@drawable/nav_icon_right" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- //////////////////// -->
+
+        <ImageView
+            android:id="@+id/hy_pay_icon_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/HY_GameSDK_22PX"
+            android:paddingLeft="@dimen/HY_GameSDK_26PX"
+            android:paddingRight="@dimen/HY_GameSDK_36PX"
+            android:paddingTop="@dimen/HY_GameSDK_22PX"
+            android:src="@drawable/hy_pay_detail"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <!-- left start -->
+
+            <ScrollView
+                android:id="@+id/hy_paylist_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/hy_pay_paylist_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/hy_button_text" >
+                    </TextView>
+
+                    <!-- 微信支付 主客 start -->
+
+                    <RelativeLayout
+                        android:id="@+id/hy_pay_select_hy_wxpay_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/HY_GameSDK_14PX"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/hy_pay_hy_wxpay_arrow_img"
+                            android:layout_width="@dimen/HY_GameSDK_150PX"
+                            android:layout_height="@dimen/HY_GameSDK_75PX"
+                            android:background="@drawable/hy_pay_arrow_blue" />
+
+                        <ImageView
+                            android:id="@+id/hy_pay_hy_wxpay_logo_img"
+                            android:layout_width="@dimen/HY_GameSDK_150PX"
+                            android:layout_height="@dimen/HY_GameSDK_75PX"
+                            android:background="@drawable/hy_pay_logo_wxpay" />
+                    </RelativeLayout>
+                    <!-- 微信支付 主客 end -->
+
+
+                    <!-- 充值卡 start -->
+
+                    <RelativeLayout
+                        android:id="@+id/hy_pay_select_operator_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/HY_GameSDK_14PX"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/hy_pay_operator_arrow_img"
+                            android:layout_width="@dimen/HY_GameSDK_150PX"
+                            android:layout_height="@dimen/HY_GameSDK_75PX"
+                            android:background="@drawable/hy_pay_arrow_blue" />
+
+                        <ImageView
+                            android:id="@+id/hy_pay_operator_logo_img"
+                            android:layout_width="@dimen/HY_GameSDK_150PX"
+                            android:layout_height="@dimen/HY_GameSDK_75PX"
+                            android:background="@drawable/hy_pay_logo_operator" />
+                    </RelativeLayout>
+                    <!-- 充值卡 start -->
+
+
+                    <!-- 短信支付 start -->
+
+                    <RelativeLayout
+                        android:id="@+id/hy_pay_select_sms_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/HY_GameSDK_14PX"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/hy_pay_sms_arrow_img"
+                            android:layout_width="@dimen/HY_GameSDK_150PX"
+                            android:layout_height="@dimen/HY_GameSDK_75PX"
+                            android:background="@drawable/hy_pay_arrow_blue" />
+
+                        <ImageView
+                            android:id="@+id/hy_pay_sms_logo_img"
+                            android:layout_width="@dimen/HY_GameSDK_150PX"
+                            android:layout_height="@dimen/HY_GameSDK_75PX"
+                            android:background="@drawable/hy_pay_logo_sms" />
+                    </RelativeLayout>
+                    <!-- 短信支付 end -->
+
+                </LinearLayout>
+            </ScrollView>
+
+            <!-- left end -->
+
+            <ImageView
+                android:id="@+id/hy_pay_paylist_vertical_cut"
+                android:layout_width="1px"
+                android:layout_height="@dimen/HY_GameSDK_474PX"
+                android:layout_toRightOf="@+id/hy_paylist_scroll"
+                android:background="#c1c1c1" />
+
+            <!-- 充值卡界面 -->
+
+            <include
+                android:id="@+id/hy_pay_goldrecha_include"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/HY_GameSDK_44PX"
+                android:layout_marginRight="@dimen/HY_GameSDK_44PX"
+                android:layout_toRightOf="@+id/hy_pay_paylist_vertical_cut"
+                layout="@layout/dialog_hy_pay_goldrecha_include"
+                android:visibility="gone" />
+            <!-- 充值卡界面 -->
+
+            <ScrollView
+                android:id="@+id/hy_pay_content_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/HY_GameSDK_44PX"
+                android:layout_marginRight="@dimen/HY_GameSDK_44PX"
+                android:layout_toRightOf="@+id/hy_pay_paylist_vertical_cut"
+                android:scrollbars="none" >
+
+                <RelativeLayout
+                    android:id="@+id/hy_pay_content_layout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/hy_pay_content_layout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/HY_GameSDK_10PX"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/hy_pay_amount_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/HY_GameSDK_24PX"
+                            android:text="@string/hy_text_000.00"
+                            android:textColor="#ff9c00"
+                            android:textSize="@dimen/HY_GameSDK_44PX" />
+
+                        <ImageView
+                            android:id="@+id/hy_pay_amount_cut"
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/HY_GameSDK_70PX"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/hy_pay_amount_txt"
+                            android:background="#c1c1c1" />
+
+                        <LinearLayout
+                            android:id="@+id/hy_pay_content_layout3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/HY_GameSDK_24PX"
+                            android:layout_toRightOf="@+id/hy_pay_amount_cut"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/hy_pay_user_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/hy_text_user_maohao"
+                                    android:textColor="#b3b3b3"
+                                    android:textSize="@dimen/HY_GameSDK_26PX" />
+
+                                <TextView
+                                    android:id="@+id/hy_pay_user_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@string/hy_text_null"
+                                    android:textColor="#717171"
+                                    android:textSize="@dimen/HY_GameSDK_26PX" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/hy_text_good_maohao"
+                                    android:textColor="#b3b3b3"
+                                    android:textSize="@dimen/HY_GameSDK_26PX" />
+
+                                <TextView
+                                    android:id="@+id/hy_pay_product_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@string/hy_text_0xingzuan"
+                                    android:textColor="#717171"
+                                    android:textSize="@dimen/HY_GameSDK_26PX" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/hy_pay_cutingline"
+                        android:layout_width="@dimen/HY_GameSDK_474PX"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/hy_pay_content_layout2"
+                        android:background="#c1c1c1" />
+
+                    <include
+                        android:id="@+id/hy_pay_include"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hy_pay_cutingline"
+                        android:layout_marginTop="@dimen/HY_GameSDK_36PX"
+                        layout="@layout/dialog_hy_pay_sms_include"
+                        android:orientation="vertical" />
+
+                    <include
+                        android:id="@+id/hy_pay_operator_include"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hy_pay_content_layout2"
+                        android:layout_marginTop="@dimen/HY_GameSDK_14PX"
+                        layout="@layout/dialog_hy_pay_operator_include"
+                        android:orientation="vertical"
+                        android:visibility="gone" />
+
+                    <!-- 了解充值卡更多 -->
+
+                    <RelativeLayout
+                        android:id="@+id/hy_pay_operator_tip_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hy_pay_alipay_bt"
+                        android:layout_marginTop="@dimen/HY_GameSDK_20PX"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/hy_pay_operator_tip"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hy_text_prompt_xzmzxtczk"
+                            android:textColor="@color/hy_edit_text_hint"
+                            android:textSize="@dimen/HY_GameSDK_24PX" />
+
+                        <TextView
+                            android:id="@+id/hy_pay_operator_tip_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/hy_pay_operator_tip"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/hy_text_prompt_ljgd"
+                            android:textColor="@drawable/hy_tv_hink_find_pwd_selector"
+                            android:textSize="@dimen/HY_GameSDK_26PX" />
+                    </RelativeLayout>
+                    <!-- 了解充值卡更多 -->
+
+                    <TextView
+                        android:id="@+id/hy_pay_alipay_bt"
+                        android:layout_width="@dimen/HY_GameSDK_474PX"
+                        android:layout_height="@dimen/HY_GameSDK_70PX"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/hy_pay_include"
+                        android:background="@color/hy_btn_text_yellow"
+                        android:gravity="center"
+                        android:text="@string/hy_text_a_qzfbfk"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/HY_GameSDK_28PX" />
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nanlus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialog"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/HY_GameSDK_20PX" >
+
+        <ImageView
+            android:id="@+id/iv_share_qq"
+            android:layout_width="@dimen/HY_GameSDK_110PX"
+            android:layout_height="@dimen/HY_GameSDK_110PX"
+            android:src="@drawable/share_qq" />
+
+        <ImageView
+            android:id="@+id/iv_share_wx"
+            android:layout_width="@dimen/HY_GameSDK_110PX"
+            android:layout_height="@dimen/HY_GameSDK_110PX"
+            android:layout_marginLeft="@dimen/HY_GameSDK_50PX"
+            android:src="@drawable/share_wechat" />
+
+        <ImageView
+            android:id="@+id/iv_share_wx_circle"
+            android:layout_width="@dimen/HY_GameSDK_110PX"
+            android:layout_height="@dimen/HY_GameSDK_110PX"
+            android:layout_marginLeft="@dimen/HY_GameSDK_50PX"
+            android:src="@drawable/share_wxcircle" />
+
+        <ImageView
+            android:id="@+id/iv_share_weibo"
+            android:layout_width="@dimen/HY_GameSDK_110PX"
+            android:layout_height="@dimen/HY_GameSDK_110PX"
+            android:layout_marginLeft="@dimen/HY_GameSDK_50PX"
+            android:src="@drawable/share_sina" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_share_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/HY_GameSDK_70PX"
+        android:background="@drawable/shape_dialog_bottom"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/hy_btn_text_white"
+        android:textSize="@dimen/HY_GameSDK_30PX" />
+
+</LinearLayout>

@@ -1,0 +1,457 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:1-291:12
+INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:1-291:12
+INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:1-291:12
+INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:1-291:12
+MERGED from [:gameSDK] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:portalsdk] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/portalsdk/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-19:12
+INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:1-291:12
+INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:1-291:12
+INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:1-291:12
+	package
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+		INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+		INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+		INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:8:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:9:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:10:22-72
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:11:5-73
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:11:22-70
+uses-permission#android.permission.READ_SETTINGS
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:12:5-72
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:12:22-69
+uses-permission#android.permission.GET_TASKS
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:13:5-68
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:13:22-65
+uses-permission#android.permission.READ_LOGS
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:14:5-68
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:14:22-65
+uses-permission#android.permission.SEND_SMS
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:15:22-64
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:16:5-70
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:16:22-67
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:17:22-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:18:5-84
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:18:22-81
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:19:5-75
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:19:22-72
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:20:5-75
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:20:22-72
+uses-permission#android.permission.READ_SMS
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:21:22-64
+uses-permission#android.permission.WRITE_SMS
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:22:5-68
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:22:22-65
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:23:5-78
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:23:22-75
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:24:5-66
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:24:22-63
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:25:22-78
+uses-permission#android.permission.REORDER_TASKS
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:26:5-72
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:26:22-69
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:27:5-79
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:27:22-76
+uses-permission#android.permission.SYSTEM_OVERLAY_WINDOW
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:28:5-80
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:28:22-77
+uses-feature#0x00020000
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:30:5-54
+	android:glEsVersion
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:30:19-51
+uses-feature#android.hardware.sensor.accelerometer
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:31:5-33:36
+	android:required
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:33:9-33
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:32:9-61
+uses-feature#android.hardware.touchscreen
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:34:5-36:36
+	android:required
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:36:9-33
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:35:9-52
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:37:5-39:36
+	android:required
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:39:9-33
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:38:9-63
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:40:5-42:36
+	android:required
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:42:9-33
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:41:9-72
+application
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:44:5-289:19
+MERGED from [:portalsdk] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/portalsdk/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:5-17:19
+MERGED from [:portalsdk] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/portalsdk/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:5-17:19
+	android:screenOrientation
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:48:9-43
+	android:label
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:47:9-41
+	android:icon
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:46:9-45
+	android:allowBackup
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:45:9-35
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:49:9-73
+uses-library#android.test.runner
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:50:9-60
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:50:23-57
+activity#com.tencent.tmgp.blockcell.MainActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:52:9-62:20
+	android:label
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:55:13-45
+	android:launchMode
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:56:13-43
+	android:configChanges
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:54:13-74
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:53:13-67
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:57:13-61:29
+action#android.intent.action.MAIN
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:58:17-69
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:58:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:60:17-77
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:60:27-74
+activity#com.tencent.tmgp.blockcell.GameActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:63:9-67:86
+	android:label
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:66:13-45
+	android:configChanges
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:65:13-74
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:67:13-83
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:64:13-67
+activity#com.tencent.tmgp.blockcell.PayActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:68:9-71:48
+	android:label
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:71:13-45
+	android:configChanges
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:70:13-109
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:69:13-66
+activity#com.alipay.sdk.app.H5PayActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:110:9-115:20
+	android:screenOrientation
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:114:13-47
+	android:exported
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:113:13-37
+	android:configChanges
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:112:13-74
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:111:13-60
+activity#com.alipay.sdk.auth.AuthActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:116:9-121:20
+	android:screenOrientation
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:120:13-47
+	android:exported
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:119:13-37
+	android:configChanges
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:118:13-74
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:117:13-60
+activity#com.tencent.tmgp.blockcell.wxapi.WXEntryActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:124:9-136:20
+	android:label
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:127:13-45
+	android:launchMode
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:128:13-43
+	android:exported
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:126:13-36
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:125:13-50
+intent-filter#android.intent.action.VIEW+android.intent.category.DEFAULT
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:129:13-135:29
+action#android.intent.action.VIEW
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:130:17-69
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:130:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:132:17-76
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:132:27-73
+data
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:134:17-61
+	android:scheme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:134:23-58
+activity#com.tencent.tmgp.blockcell.wxapi.WXPayEntryActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:137:9-140:46
+	android:launchMode
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:140:13-43
+	android:exported
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:139:13-36
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:138:13-53
+activity#com.tencent.tauth.AuthActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:146:9-158:20
+	android:launchMode
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:148:13-44
+	android:noHistory
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:149:13-37
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:147:13-58
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:150:13-157:29
+category#android.intent.category.BROWSABLE
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:154:17-78
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:154:27-75
+activity#com.tencent.connect.common.AssistActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:159:9-162:75
+	android:configChanges
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:161:13-74
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:162:13-72
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:160:13-69
+activity#com.sina.weibo.sdk.web.WeiboSdkWebActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:169:9-174:20
+	android:windowSoftInputMode
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:173:13-55
+	android:exported
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:172:13-37
+	android:configChanges
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:171:13-63
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:170:13-70
+activity#com.sina.weibo.sdk.share.WbShareTransActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:175:9-184:20
+	android:launchMode
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:177:13-44
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:178:13-83
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:176:13-73
+intent-filter#android.intent.category.DEFAULT+com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:179:13-183:29
+action#com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:180:17-92
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:180:25-89
+activity#com.heyijoy.gamesdk.widget.WebViewActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:188:9-191:58
+	android:label
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:190:13-45
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:191:13-55
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:189:13-70
+activity#com.heyijoy.gamesdk.widget.WebViewFullscreenActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:192:9-194:86
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:194:13-83
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:193:13-80
+activity#com.heyijoy.gamesdk.widget.WebViewVipActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:195:9-197:86
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:197:13-83
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:196:13-73
+activity#com.heyijoy.gamesdk.widget.WebViewWelfareActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:198:9-201:86
+	android:screenOrientation
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:200:13-49
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:201:13-83
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:199:13-77
+activity#com.heyijoy.gamesdk.activity.HYInitActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:202:9-207:86
+	android:excludeFromRecents
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:205:13-46
+	android:launchMode
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:206:13-43
+	android:configChanges
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:204:13-74
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:207:13-83
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:203:13-71
+activity#com.heyijoy.gamesdk.activity.HYQQLoginActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:208:9-211:86
+	android:configChanges
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:210:13-74
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:211:13-83
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:209:13-74
+activity#com.heyijoy.gamesdk.activity.HYShareQQActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:212:9-215:86
+	android:configChanges
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:214:13-74
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:215:13-83
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:213:13-74
+activity#com.heyijoy.gamesdk.activity.HYWBShareActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:216:9-220:86
+	android:screenOrientation
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:219:13-49
+	android:configChanges
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:218:13-63
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:220:13-83
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:217:13-74
+activity#com.heyijoy.gamesdk.activity.HYWeiBoLoginActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:221:9-224:86
+	android:configChanges
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:223:13-74
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:224:13-83
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:222:13-77
+activity#com.heyijoy.gamesdk.activity.HYRelayActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:225:9-227:86
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:227:13-83
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:226:13-72
+activity#com.estore.ui.CTEStoreSDKActivity
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:228:9-231:64
+	android:screenOrientation
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:230:13-49
+	android:theme
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:231:13-61
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:229:13-61
+service#com.heyijoy.gamesdk.update.DownloadService
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:233:9-78
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:233:18-75
+service#com.heyijoy.gamesdk.memfloat.FloatService
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:240:9-244:19
+	android:enabled
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:242:13-35
+	android:exported
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:243:13-37
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:241:13-69
+service#com.heyijoy.gamesdk.memfloat.FloatViewService
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:245:9-249:19
+	android:enabled
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:247:13-35
+	android:exported
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:248:13-37
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:246:13-73
+receiver#com.zb.feecharge.processline.sms.SmsReceiver
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:251:9-255:20
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:251:19-78
+intent-filter#android.provider.Telephony.SMS_RECEIVED
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:252:13-254:29
+	android:priority
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:252:28-57
+action#android.provider.Telephony.SMS_RECEIVED
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:253:17-82
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:253:25-79
+meta-data#HYGAME_APPID
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:261:9-264:21
+	android:value
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:263:13-31
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:262:13-40
+meta-data#HYGAME_APPNAME
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:266:9-269:21
+	android:value
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:268:13-33
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:267:13-42
+meta-data#HYGAME_APPKEY
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:271:9-274:21
+	android:value
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:273:13-61
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:272:13-41
+meta-data#HYGAME_PRIVATEKEY
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:276:9-279:21
+	android:value
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:278:13-61
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:277:13-45
+uses-sdk
+INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+MERGED from [:gameSDK] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:gameSDK] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:portalsdk] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/portalsdk/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-11:41
+MERGED from [:portalsdk] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/portalsdk/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-11:41
+INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+		INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml
+		INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml

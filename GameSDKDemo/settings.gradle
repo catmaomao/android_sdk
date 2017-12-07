@@ -1,0 +1,3 @@
+include ':portalsdk'
+include ':gameSDK'
+include ':gameSDKDemo'

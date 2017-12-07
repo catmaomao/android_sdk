@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GameSDKDemo.iml" filepath="$PROJECT_DIR$/GameSDKDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gameSDK/gameSDK.iml" filepath="$PROJECT_DIR$/gameSDK/gameSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gameSDKDemo/gameSDKDemo.iml" filepath="$PROJECT_DIR$/gameSDKDemo/gameSDKDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/portalsdk/portalsdk.iml" filepath="$PROJECT_DIR$/portalsdk/portalsdk.iml" />
+    </modules>
+  </component>
+</project>

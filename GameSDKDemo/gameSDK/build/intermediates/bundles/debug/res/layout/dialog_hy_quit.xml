@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/HY_GameSDK_552PX"
+    android:layout_height="fill_parent"
+    android:background="@color/hy_hybgColor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/hy_title" />
+
+    <TextView
+        android:id="@+id/hy_quit_baner_text"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/HY_GameSDK_150PX"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/hy_button_text"
+        android:textSize="@dimen/HY_GameSDK_28PX" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/hy_button_text" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/HY_GameSDK_94PX"
+        android:background="#FFFFFFFF"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_quit"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/hy_btn_text_white"
+            android:text="@string/hy_text_btn_quit"
+            android:textColor="@color/hy_button_text"
+            android:textSize="@dimen/HY_GameSDK_28PX" />
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/hy_button_text" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/hy_btn_text_white"
+            android:text="@string/hy_text_btn_qx"
+            android:textColor="@color/hy_button_text"
+            android:textSize="@dimen/HY_GameSDK_28PX" />
+    </LinearLayout>
+
+</LinearLayout>

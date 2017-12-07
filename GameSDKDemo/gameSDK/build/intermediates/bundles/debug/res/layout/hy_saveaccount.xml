@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_account"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/title_logo_other" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tv_linee"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#86b09b" />
+
+            <ImageView
+                android:id="@+id/iv_useravatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/save_username" />
+
+            <TextView
+                android:id="@+id/tv_save_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/HY_GameSDK_26PX"
+                android:layout_toRightOf="@+id/iv_useravatar"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/hy_white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_linew"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#86b09b" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_userpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/save_pwd" />
+
+            <TextView
+                android:id="@+id/tv_save_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/HY_GameSDK_26PX"
+                android:layout_toRightOf="@+id/iv_userpwd"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/hy_white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_linee"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#86b09b" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:lineSpacingExtra="3dp"
+            android:text="此图片信息为“着迷Game”的游客帐号及密码，请阁下妥善保管，便于在遗忘时找回。"
+            android:textColor="@color/hy_white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

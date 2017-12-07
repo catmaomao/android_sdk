@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/HY_GameSDK_580PX"
+    android:layout_height="wrap_content"
+    android:background="@color/hy_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/hy_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_modify_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+            android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+            android:layout_marginTop="@dimen/HY_GameSDK_30PX" >
+
+            <TextView
+                android:id="@+id/tv_modify_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/hy_modify_pwd"
+                android:textColor="@color/hy_button_text"
+                android:textSize="@dimen/HY_GameSDK_26PX" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/nav_icon_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_binding_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_30PX" >
+
+        <TextView
+            android:id="@+id/tv_binding_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="绑定账号"
+            android:textColor="@color/hy_button_text"
+            android:textSize="@dimen/HY_GameSDK_26PX" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/HY_GameSDK_18PX"
+            android:layout_toRightOf="@id/tv_binding_phone"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_bind_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="未绑定"
+                android:textColor="@color/hy_btn_text_yellow"
+                android:textSize="@dimen/HY_GameSDK_26PX"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_nav_icon_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dip"
+                android:layout_marginLeft="@dimen/HY_GameSDK_10PX"
+                android:background="@drawable/nav_icon_right"
+                android:gravity="center_vertical"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_certification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/HY_GameSDK_30PX"
+        android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+        android:layout_marginTop="@dimen/HY_GameSDK_30PX" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="实名认证"
+            android:textColor="@color/hy_button_text"
+            android:textSize="@dimen/HY_GameSDK_26PX" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/nav_icon_right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/HY_GameSDK_28PX"
+        android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+        android:background="@color/hy_hybgColor"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/btn_onlogout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/HY_GameSDK_70PX"
+            android:background="@color/hy_btn_text_yellow"
+            android:text="@string/hy_text_logout"
+            android:textColor="@color/hy_btn_text_white"
+            android:textSize="@dimen/HY_GameSDK_30PX" />
+    </LinearLayout>
+
+    <!-- /////////////////////////////老版本////////////////////////////////// -->
+
+    <LinearLayout
+        android:id="@+id/dialog_yt_precenter_ll"
+        android:layout_width="@dimen/HY_GameSDK_580PX"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/HY_GameSDK_20PX"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/HY_GameSDK_150PX"
+            android:layout_marginTop="@dimen/HY_GameSDK_35PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/HY_GameSDK_119PX"
+                android:layout_height="@dimen/HY_GameSDK_119PX"
+                android:layout_gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/dialog_yt_precenter_iv"
+                    android:layout_width="@dimen/HY_GameSDK_100PX"
+                    android:layout_height="@dimen/HY_GameSDK_100PX"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/yt_precenter_iv" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/HY_GameSDK_24PX"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/dialog_hy_precenter_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="13"
+                        android:singleLine="true"
+                        android:text="@string/hy_precenter_title_username"
+                        android:textColor="@color/hy_dark_nearly_black"
+                        android:textSize="@dimen/HY_GameSDK_30PX" />
+
+                    <TextView
+                        android:id="@+id/tv_modify_pwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/hy_modify_pwd"
+                        android:textColor="@color/hy_content_gray"
+                        android:textSize="@dimen/HY_GameSDK_30PX" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_binding_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/HY_GameSDK_16PX"
+                    android:maxLength="13"
+                    android:singleLine="true"
+                    android:text="@string/hy_binding_phone"
+                    android:textColor="@color/hy_dark_nearly_black"
+                    android:textSize="@dimen/HY_GameSDK_26PX" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

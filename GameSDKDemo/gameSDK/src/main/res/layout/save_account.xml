@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nanlus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/HY_GameSDK_552PX"
+    android:layout_height="wrap_content"
+    android:background="@color/hy_hybgColor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/hy_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="@dimen/HY_GameSDK_216PX" >
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="@dimen/HY_GameSDK_26PX"
+            android:paddingLeft="@dimen/HY_GameSDK_26PX"
+            android:paddingRight="@dimen/HY_GameSDK_26PX"
+            android:paddingTop="@dimen/HY_GameSDK_26PX"
+            android:text="     您当前为快速登录状态，系统会自动为您生成账号和密码，为防止您遗忘该账号，我们将您的账号保存到设备相册中。"
+            android:textColor="@color/hy_button_text"
+            android:textSize="@dimen/HY_GameSDK_26PX" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/HY_GameSDK_26PX"
+        android:layout_marginLeft="@dimen/HY_GameSDK_36PX"
+        android:layout_marginRight="@dimen/HY_GameSDK_36PX"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/HY_GameSDK_70PX"
+            android:background="@color/hy_btn_text_yellow"
+            android:text="@string/hy_text_queding"
+            android:textColor="@color/hy_btn_text_white"
+            android:textSize="@dimen/HY_GameSDK_32PX" />
+    </LinearLayout>
+
+</LinearLayout>

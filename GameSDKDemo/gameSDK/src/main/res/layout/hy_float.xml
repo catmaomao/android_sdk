@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hy_float_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.heyijoy.gamesdk.memfloat.HYRelativeLayout
+        android:id="@+id/hy_float_logo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/hy_float_logo_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/suspend_view" />
+
+    </com.heyijoy.gamesdk.memfloat.HYRelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hy_float_sub_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/HY_GameSDK_7PX"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/hy_float_personal_img"
+            android:layout_width="@dimen/HY_GameSDK_60PX"
+            android:layout_height="@dimen/HY_GameSDK_53PX"
+            android:layout_marginRight="@dimen/HY_GameSDK_18PX"
+            android:src="@drawable/hy_float_more" />
+
+        <ImageView
+            android:id="@+id/hy_float_hide_img"
+            android:layout_width="@dimen/HY_GameSDK_60PX"
+            android:layout_height="@dimen/HY_GameSDK_53PX"
+            android:layout_marginRight="@dimen/HY_GameSDK_18PX"
+            android:src="@drawable/hy_float_hide" />
+
+        <ImageView
+            android:id="@+id/hy_float_change_account_img"
+            android:layout_width="@dimen/HY_GameSDK_60PX"
+            android:layout_height="@dimen/HY_GameSDK_53PX"
+            android:layout_marginRight="@dimen/HY_GameSDK_18PX"
+            android:src="@drawable/hy_float_change_account_big"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

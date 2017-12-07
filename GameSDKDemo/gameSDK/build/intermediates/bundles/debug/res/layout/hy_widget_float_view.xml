@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp" >
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/hy_menu_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/hy_float_personal_img"
+            android:layout_width="@dimen/HY_GameSDK_60PX"
+            android:layout_height="@dimen/HY_GameSDK_53PX"
+            android:src="@drawable/hy_float_more" />
+
+        <ImageView
+            android:id="@+id/hy_float_hide_img"
+            android:layout_width="@dimen/HY_GameSDK_60PX"
+            android:layout_height="@dimen/HY_GameSDK_53PX"
+            android:src="@drawable/hy_float_hide" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/hy_float_view"
+        android:layout_width="45dp"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/hy_float_view_icon_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/logo_left" />
+
+    </FrameLayout>
+
+</FrameLayout>
