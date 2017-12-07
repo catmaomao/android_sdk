@@ -14,7 +14,7 @@ import com.heyijoy.gamesdk.act.HYCallBack;
 import com.heyijoy.gamesdk.data.Bean;
 import com.heyijoy.gamesdk.http.HttpApi;
 import com.heyijoy.gamesdk.http.HttpRequestManager;
-import com.heyijoy.gamesdk.lib.HYConstant;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.util.Util;
 import com.heyijoy.gamesdk.R;
 

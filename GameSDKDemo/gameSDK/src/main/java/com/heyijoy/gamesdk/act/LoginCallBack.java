@@ -13,14 +13,10 @@
 
 package com.heyijoy.gamesdk.act;
 
+import android.content.Context;
+
 import com.heyijoy.gamesdk.data.Bean;
 import com.heyijoy.gamesdk.data.User;
-import com.heyijoy.gamesdk.http.HttpApi;
-import com.heyijoy.gamesdk.orderlist.BenefitDialog;
-import com.heyijoy.gamesdk.util.Util;
-
-import android.app.Activity;
-import android.content.Context;
 
 /**
  * ClassName:LoginCallBack
@@ -42,11 +38,7 @@ public class LoginCallBack implements HYCallBack{
 	@Override
 	public void onSuccess(Bean bean) {
 		User user = (User) bean;
-//		Util.getTaskListSec(context);
 		GameSDKApplication.getInstance().setCurrentUser(user);
-//		BenefitDialog benifitDialog = new BenefitDialog((Activity)context);
-//		benifitDialog.show();
-//		HttpApi.getInstance().getAccessToken();
 		hycallBack.onSuccess(user.toYkGameUser());
 	}
 

@@ -1,6 +1,6 @@
 package com.heyijoy.gamesdk.util;
 
-import com.heyijoy.gamesdk.lib.HYConstant;
+import com.heyijoy.gamesdk.constants.HYConstant;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

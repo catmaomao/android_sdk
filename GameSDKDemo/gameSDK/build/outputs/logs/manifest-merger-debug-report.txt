@@ -21,6 +21,10 @@ INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/src/main/An
 		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/src/main/AndroidManifest.xml:4:5-28
 		INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/src/main/AndroidManifest.xml
 		INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/src/main/AndroidManifest.xml:6:22-76
 uses-sdk
 INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/src/main/AndroidManifest.xml

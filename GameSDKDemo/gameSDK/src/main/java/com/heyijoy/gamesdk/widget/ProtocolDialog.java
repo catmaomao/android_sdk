@@ -7,7 +7,7 @@
 package com.heyijoy.gamesdk.widget;
 
 import com.heyijoy.gamesdk.act.HYCallBack;
-import com.heyijoy.gamesdk.lib.HYConstant;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.R;
 import com.heyijoy.gamesdk.util.Util;
 

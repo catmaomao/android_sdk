@@ -4,7 +4,6 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.DialogInterface.OnKeyListener;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -19,11 +18,8 @@ import android.widget.Toast;
 import com.heyijoy.gamesdk.act.GameSDKApplication;
 import com.heyijoy.gamesdk.act.HYCallBack;
 import com.heyijoy.gamesdk.activity.HYInitActivity;
-import com.heyijoy.gamesdk.data.User;
-import com.heyijoy.gamesdk.lib.HYConstant;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.util.Util;
-import com.heyijoy.gamesdk.widget.BindingPhoneDialog;
-import com.heyijoy.gamesdk.widget.HYDialog;
 import com.heyijoy.gamesdk.R;
 
 /**

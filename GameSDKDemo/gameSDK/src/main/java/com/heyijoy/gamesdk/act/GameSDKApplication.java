@@ -12,20 +12,7 @@
 
 package com.heyijoy.gamesdk.act;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.app.ActivityManager;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -34,43 +21,32 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.pm.ResolveInfo;
-import android.database.Cursor;
-import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
-import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
-import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Message;
-import android.provider.Settings;
-import android.provider.Settings.Secure;
 import android.telephony.TelephonyManager;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-import com.heyijoy.gamesdk.data.BlockParams;
-import com.heyijoy.gamesdk.data.CookieContentResover;
-import com.heyijoy.gamesdk.data.CookieContentResoverByCenter;
-import com.heyijoy.gamesdk.data.GamePlayersCookieBean;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.data.HYThridParams;
-import com.heyijoy.gamesdk.data.OrderFloatBean;
-import com.heyijoy.gamesdk.data.TaskBean;
 import com.heyijoy.gamesdk.data.User;
-import com.heyijoy.gamesdk.data.UserContentResover;
-import com.heyijoy.gamesdk.data.VideSettingDataBean;
-import com.heyijoy.gamesdk.data.VipBean;
-import com.heyijoy.gamesdk.http.LoadImageAsyncTask;
-import com.heyijoy.gamesdk.lib.HYConstant;
-import com.heyijoy.gamesdk.R;
-import com.heyijoy.gamesdk.sql.MsgDBTool;
 import com.heyijoy.gamesdk.util.Base64;
 import com.heyijoy.gamesdk.util.Logger;
 import com.heyijoy.gamesdk.util.Util;
 import com.heyijoy.sdk.ShareParams;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.net.URLEncoder;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author msh
@@ -91,28 +67,20 @@ public class GameSDKApplication {
 	private String appkey;
 	private String appPrivatekey;
 	private String hotWindID;// 热云id
-	private String appver;// 版本号 1.3通用版
-	private String BRAND;// 无线终端品牌
 	private String OS = "Android"; // 操作系统
 	private String ProvidersCode = ""; // 运营商
 	private String ProvidersName = ""; // 运营商
 	private String IPAdd = ""; // IP地址
 	private String newPackageID = null; // 礼包id
 	private WindowManager.LayoutParams wmParams;
-	private List<ResolveInfo> allPackageList;
-	private Set<String> taskListId;
-	private ArrayList<TaskBean> taskBeanList;
 	private User currentUser;
 	private int iconId = 0;
 	private long timeDiff;// 跟后台的时间差
-	private int showBindingDlgProbability;// 0~100
 	private boolean isneedbind = false;// 是否是用户名注册登录的用户
 	private boolean isPhoneRegOpen = false;// 输入手机号注册开关 默认关闭
 	private boolean isNameRegOpen = false;// 输入用户名注册开关 默认关闭
-	private boolean isHasTask = false, welfare = false, video = false;
 
 	// floatSwitch 悬浮窗各个功能入口对应的开关信息，specialSwitch 红点是否显示的开关信息
-	private boolean[] floatSwitch = null, specialSwitch = null;
 	private static GameSDKApplication app;
 	private String paySwitch = "";
 	private boolean isRemoteLogin = false;
@@ -123,8 +91,6 @@ public class GameSDKApplication {
 	private boolean flag = false;
 	private BitmapDrawable bd = null;
 	private ImageView preIv = null;
-	private String registerPlan = "1";// 注册方案，A方案-- "1" 有guid 生成用户名模式；B方案-- "2"
-										// 无guid 生成用户名模式，默认 "1"
 
 	private String welfareUrl = "";
 	private String appType = "";
@@ -133,17 +99,9 @@ public class GameSDKApplication {
 
 	private String client_id = "42c749c42d7a733f";
 	private String client_secret = "8968f1f12e60255e0b30cc0f4b3743f8";
-	private static int[] ordBack;// 悬浮窗图片资源id，按照默认顺序进行添加
-	private static int[] specialBack;// 悬浮窗红点资源id，暂时有两个，前者礼包，后者消息
-	private static int[] ordBackBig;// 对应的图片资源尺寸比ordBack的大些，用于个人中心上
-	private static int[] specialBackBig;// 对应的图片资源尺寸比specialBack的大些，用于个人中心上，暂时有两个，前者礼包，后者消息
-	// private IDDBTool iddbt;
-	private MsgDBTool mdbt;
 	private Boolean isHotWind = false;
-	private boolean isAddRecordFunction;
 
 	private boolean isInCocos2dxActivity;
-	private boolean isInU3dActivity;
 
 	private String accress_token;
 
@@ -211,16 +169,10 @@ public class GameSDKApplication {
 			setAPPName();
 			setAppPrivateKey();
 			setHotWindID();
-			setSystem();
 			setVMParams();
 			setSPForException();
 			startPush();
 			setPreDialog();
-			setFloatDraw();
-			setOrdBackData();
-			setSpecialBackData();
-			setOrdBackBigData();
-			setSpecialBackBigData();
 		}
 	}
 
@@ -353,30 +305,10 @@ public class GameSDKApplication {
 		return GameSDKApplication.getInstance().getSPForPackXML().getString(HYConstant.PACK_FROM_GAMECENTER, "");
 	}
 
-	public void setVideoSettingData(VideSettingDataBean videSettingDataBean) {
-		Editor edit = getEditorForException();
-		edit.putBoolean("isAutoUpload", videSettingDataBean.isAutoUpload());
-		edit.putBoolean("isRecodeVoice", videSettingDataBean.isRecodeVoice());
-		edit.putBoolean("isUseDataTraffic", videSettingDataBean.isUseDataTraffic());
-		edit.putString("definitionQuality", videSettingDataBean.getDefinitionQuality());
-		edit.commit();
-	}
-
 	public void setDataTrafficSwitch(boolean isSwitch) {
 		Editor edit = getEditorForException();
 		edit.putBoolean("isUseDataTraffic", isSwitch);
 		edit.commit();
-	}
-
-	public VideSettingDataBean getVideoSettingData() {
-		VideSettingDataBean videSettingDataBean = new VideSettingDataBean();
-		SharedPreferences preferences = this.context.getSharedPreferences(HYConstant.YK_EXCEPTION,
-				Context.MODE_PRIVATE);
-		videSettingDataBean.setAutoUpload(preferences.getBoolean("isAutoUpload", true));
-		videSettingDataBean.setRecodeVoice(preferences.getBoolean("isRecodeVoice", true));
-		videSettingDataBean.setUseDataTraffic(preferences.getBoolean("isUseDataTraffic", false));
-		videSettingDataBean.setDefinitionQuality(preferences.getString("definitionQuality", "2"));
-		return videSettingDataBean;
 	}
 
 	public static synchronized GameSDKApplication getInstance() {
@@ -398,7 +330,7 @@ public class GameSDKApplication {
 		return context;
 	}
 
-	private void setFloatDraw() {
+//	private void setFloatDraw() {
 //		ordBack = new int[12];
 //		specialBack = new int[2];// 暂时有两个，前者礼包，后者消息
 //		ordBackBig = new int[12];
@@ -431,161 +363,8 @@ public class GameSDKApplication {
 //		ordBackBig[11] = R.drawable.hy_float_consume_welfare_big;
 //		specialBackBig[0] = R.drawable.hy_float_present_big_y;
 //		specialBackBig[1] = R.drawable.hy_float_msg_big_y;
-	}
+//	}
 
-	/**
-	 * 取本地版本名
-	 */
-	public String getVesionName() {
-		String versionName = null;
-		try {
-			versionName = context.getPackageManager().getPackageInfo("net.vpntunnel", 0).versionName;
-		} catch (NameNotFoundException e) {
-			Logger.e(e.getMessage());
-		}
-		return versionName;
-	}
-
-	public boolean isHasTask() {
-		return isHasTask;
-	}
-
-	public ArrayList<TaskBean> getTaskBeanList() {
-		return taskBeanList;
-	}
-
-	public void setTaskBeanList(ArrayList<TaskBean> taskBeanList) {
-		this.taskBeanList = taskBeanList;
-	}
-
-	public void clearTableListID() {
-		if (taskListId == null) {
-			return;
-		} else {
-			taskListId.clear();
-			taskListId = null;
-		}
-	}
-
-	public boolean getIsDiffTask() {
-		if (taskListId == null) {
-			return false;
-		} else {
-			return taskListId.size() == 2 ? true : false;
-		}
-	}
-
-	public void setTableListID(String str) {
-		if (taskListId == null) {
-			taskListId = new HashSet<String>();
-		}
-		if (!taskListId.contains(str)) {
-			taskListId.add(str);
-		}
-	}
-
-	public void setHasTask(boolean isHasTask) {
-		this.isHasTask = isHasTask;
-	}
-
-	public void setOrdBackData() {// 将ordBack 信息保存到 本地 SharedPreferences
-//		Editor edit = getEditorForException();
-//		for (int i = 0; i <= ordBack.length - 1; i++) {
-//			edit.putInt("ord" + i, ordBack[i]);
-//		}
-//		edit.putInt("ordLen", ordBack.length);
-//		edit.commit();
-	}
-
-	public int[] getOrdBackData() {// 获取本地保存的悬浮窗各个功能对应的图片资源，数组形式返回
-		int ordLen = 0;
-		SharedPreferences preferences = this.context.getSharedPreferences(HYConstant.YK_EXCEPTION,
-				Context.MODE_PRIVATE);
-		ordLen = preferences.getInt("ordLen", 0);
-		if (ordLen == 0) {
-			return null;
-		}
-		int[] ordBac = new int[ordLen];
-		for (int i = 0; i <= ordLen - 1; i++) {
-			ordBac[i] = preferences.getInt("ord" + i, 0);
-		}
-		return ordBac;
-	}
-
-	public void setSpecialBackData() {// 将specialBack 信息保存到 本地 SharedPreferences
-//		Editor edit = getEditorForException();
-//		for (int i = 0; i <= specialBack.length - 1; i++) {
-//			edit.putInt("spe" + i, specialBack[i]);
-//		}
-//		edit.putInt("speLen", specialBack.length);
-//		edit.commit();
-	}
-
-	public int[] getSpecialBackData() {// 获取本地保存的悬浮窗红点对应的图片资源，数组形式返回
-		int specialLen = 0;
-		SharedPreferences preferences = this.context.getSharedPreferences(HYConstant.YK_EXCEPTION,
-				Context.MODE_PRIVATE);
-		specialLen = preferences.getInt("speLen", 0);
-		if (specialLen == 0) {
-			return null;
-		}
-		int[] speBac = new int[specialLen];
-		for (int i = 0; i <= specialLen - 1; i++) {
-			speBac[i] = preferences.getInt("spe" + i, 0);
-		}
-		return speBac;
-	}
-
-	public void setOrdBackBigData() {// 将ordBackBig 信息保存到 本地 SharedPreferences
-//		Editor edit = getEditorForException();
-//		for (int i = 0; i <= ordBackBig.length - 1; i++) {
-//			edit.putInt("ordbig" + i, ordBackBig[i]);
-//		}
-//		edit.putInt("ordBigLen", ordBackBig.length);
-//		edit.commit();
-	}
-
-	public int[] getOrdBackBigData() {// 从SharedPreferences 中 获取到
-										// 相应的个人中心的图片对应的资源id数组
-		int ordBigLen = 0;
-		SharedPreferences preferences = this.context.getSharedPreferences(HYConstant.YK_EXCEPTION,
-				Context.MODE_PRIVATE);
-		ordBigLen = preferences.getInt("ordBigLen", 0);
-		if (ordBigLen == 0) {
-			return null;
-		}
-		int[] ordBigBac = new int[ordBigLen];
-		for (int i = 0; i <= ordBigLen - 1; i++) {
-			ordBigBac[i] = preferences.getInt("ordbig" + i, 0);
-		}
-		return ordBigBac;
-	}
-
-	public void setSpecialBackBigData() {// 将specialBackBig 信息保存到 本地
-											// SharedPreferences
-//		Editor edit = getEditorForException();
-//		for (int i = 0; i <= specialBackBig.length - 1; i++) {
-//			edit.putInt("spebig" + i, specialBackBig[i]);
-//		}
-//		edit.putInt("speBigLen", specialBackBig.length);
-//		edit.commit();
-	}
-
-	public int[] getSpecialBackBigData() {// 从SharedPreferences 中 获取到
-											// 个人中心的红点图片对应的资源id信息
-		int specialBigLen = 0;
-		SharedPreferences preferences = this.context.getSharedPreferences(HYConstant.YK_EXCEPTION,
-				Context.MODE_PRIVATE);
-		specialBigLen = preferences.getInt("speBigLen", 0);
-		if (specialBigLen == 0) {
-			return null;
-		}
-		int[] speBigBac = new int[specialBigLen];
-		for (int i = 0; i <= specialBigLen - 1; i++) {
-			speBigBac[i] = preferences.getInt("spebig" + i, 0);
-		}
-		return speBigBac;
-	}
 
 	/**
 	 * 取本地版本号
@@ -603,18 +382,6 @@ public class GameSDKApplication {
 		return versionCode;
 	}
 
-	public int geticonid(Context context) {
-		if (iconId == 0) {
-			try {
-				PackageManager mangager = context.getPackageManager();
-				PackageInfo info = mangager.getPackageInfo(context.getPackageName(), 0);
-				iconId = info.applicationInfo.icon;
-			} catch (Exception e) {
-				Logger.e(e.getMessage());
-			}
-		}
-		return iconId;
-	}
 
 	private void setSGuid() {
 		TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
@@ -640,33 +407,6 @@ public class GameSDKApplication {
 		guid = Util.md5(mac + imei);
 	}
 
-	public OrderFloatBean getOrderFloatBean(Context context) {
-		OrderFloatBean orderFloatBean = new OrderFloatBean();
-		if (context == null) {
-			orderFloatBean.setOrderFirst("1,2,3,4");
-			orderFloatBean.setOrderSecond("5,6,7,8,9,10,11,13");
-			return orderFloatBean;
-		}
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.YK_EXCEPTION, Context.MODE_PRIVATE);
-		orderFloatBean.setOrderFirst(preferences.getString("first", "1,2,3,4"));
-		orderFloatBean.setOrderSecond(preferences.getString("second", "5,6,7,8,9,10,11,13"));
-		return orderFloatBean;
-	}
-
-	public void setOrderFloatBean(OrderFloatBean orderFloatBean) {
-		Editor edit = getEditorForException();
-		edit.putString("first", orderFloatBean.getOrderFirst());
-		edit.putString("second", orderFloatBean.getOrderSecond());
-		edit.commit();
-	}
-
-	public int getShowBindingDlgProbability() {
-		return showBindingDlgProbability;
-	}
-
-	public void setShowBindingDlgProbability(int showBindingDlgProbability) {
-		this.showBindingDlgProbability = showBindingDlgProbability;
-	}
 
 	public boolean isPhoneRegOpen() {
 		return isPhoneRegOpen;
@@ -682,14 +422,6 @@ public class GameSDKApplication {
 
 	public void setNameRegOpen(boolean isNameRegOpen) {
 		this.isNameRegOpen = isNameRegOpen;
-	}
-
-	public boolean isRemoteLogin() {
-		return isRemoteLogin;
-	}
-
-	public void setRemoteLogin(boolean isRemoteLogin) {
-		this.isRemoteLogin = isRemoteLogin;
 	}
 
 	public boolean getIsbind(String userName) {
@@ -718,29 +450,6 @@ public class GameSDKApplication {
 		return false;
 	}
 
-	public boolean isWelfare() {
-		return welfare;
-	}
-
-	public void setWelfare(boolean welfare) {
-		this.welfare = welfare;
-	}
-
-	public String getWelfareUrl() {
-		return welfareUrl;
-	}
-
-	public void setWelfareUrl(String welfareUrl) {
-		this.welfareUrl = welfareUrl;
-	}
-
-	public boolean isVideo() {
-		return video;
-	}
-
-	public void setVideo(boolean video) {
-		this.video = video;
-	}
 
 	private void setAPPName() {
 		ApplicationInfo appInfo;
@@ -764,37 +473,6 @@ public class GameSDKApplication {
 		return appname;
 	}
 
-	public String getAppver() {
-		return appver;
-	}
-
-	public void setSystem() {
-		TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-		String IMSI = telephonyManager.getSubscriberId();
-		// 返回唯一的用户ID;就是这张卡的编号神马的
-		IMSI = telephonyManager.getSubscriberId();
-		// IMSI号前面3位460是国家，紧接着后面2位00 02 07是中国移动，01 06是中国联通，03 05是中国电信。
-		if (IMSI != null && IMSI.length() >= 5) {
-			setImsi(IMSI);// 初始化imsi
-			IMSI = IMSI.substring(0, 5);
-			if (IMSI.startsWith("46000") || IMSI.startsWith("46002") || IMSI.startsWith("46007")) {
-				ProvidersCode = "1";
-				ProvidersName = "中国移动";
-			} else if (IMSI.startsWith("46001") || IMSI.startsWith("46006")) {
-				ProvidersCode = "2";
-				ProvidersName = "中国联通";
-			} else if (IMSI.startsWith("46003") || IMSI.startsWith("46005")) {
-				ProvidersCode = "3";
-				ProvidersName = "中国电信";
-			} else if (IMSI.startsWith("46020")) {
-				ProvidersName = "中国铁通";
-			}
-			ProvidersName = URLEncoder.encode(ProvidersName += "_" + IMSI);// 运营商名字是汉子，需要urlencode
-		} else {
-			ProvidersName = "";
-		}
-
-	}
 
 	/**
 	 * 获取ip地址并保存
@@ -805,18 +483,6 @@ public class GameSDKApplication {
 
 	public String getOS() {
 		return OS;
-	}
-
-	public String getProvidersCode() {
-		if (ProvidersCode == null || ProvidersCode.equals(""))
-			setSystem();
-		return ProvidersCode;
-	}
-
-	public String getProvidersName() {
-		if (ProvidersName == null || ProvidersName.equals(""))
-			setSystem();
-		return ProvidersName;
 	}
 
 	public String getIPAdd() {
@@ -1111,45 +777,9 @@ public class GameSDKApplication {
 		}
 		editor.putString(HYConstant.PREF_FILE_COOKIE, Base64.encode(cookie.getBytes()));
 		editor.commit();
-		// 保存到游戏中心
-		CookieContentResover.getInstance().insert(Base64.encode(cookie.getBytes()));
+
 	}
 
-	/**
-	 * 获取 yktk
-	 */
-	public String getYktk() {
-
-		String getCookie = getCookie();
-		String yktk = "";
-		if (getCookie == null || "".equals(getCookie)) {
-			return "";
-		}
-		if (getCookie.contains("user_token")) {
-			yktk = getCookie.substring(getCookie.indexOf(";") + 1);
-		} else {
-			yktk = getCookie;
-		}
-		return handleYktk(yktk);
-	}
-
-	/**
-	 * 获取 token
-	 */
-	public String getYktoken() {
-
-		String getCookie = getCookie();
-		String token = "";
-		if (getCookie.contains("user_token")) {
-			try {
-				JSONObject json = new JSONObject(getCookie);
-				token = json.getString("user_token");
-			} catch (JSONException e) {
-				e.printStackTrace();
-			}
-		}
-		return token;
-	}
 
 	public String handleYktk(String yktk) {
 		if (yktk == null || "".equals(yktk)) {
@@ -1163,40 +793,6 @@ public class GameSDKApplication {
 		}
 	}
 
-	/**
-	 * 保存自动登录所需要的用户信息
-	 */
-	public String getCookie() {
-		if (context == null) {
-			return null;
-		}
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
-		String cookie = preferences.getString(HYConstant.PREF_FILE_COOKIE, "");
-		if ("".equals(cookie)) // 本地没有
-		{
-			cookie = CookieContentResover.getInstance().queryCookie();
-			if (cookie == null || "".equals(cookie)) {
-				GamePlayersCookieBean gocb = CookieContentResoverByCenter.getInstance().queryCookie();
-				if (gocb == null) {
-					return null;
-				}
-				cookie = gocb.getCookie();
-				if (cookie == null || "".equals(cookie)) // 本地跟游戏中心都没有
-				{
-					return null;
-				} else {
-					cookie = new String(Base64.decode(cookie));
-					String yktk = URLEncoder.encode(handleYktk(cookie));
-					cookie = "yktk=" + yktk + ";";
-					setRemoteLogin(true);// 本地没有，取游戏中心数据
-					return cookie;
-				}
-			} else {
-				setRemoteLogin(true);// 本地没有，取游戏中心数据
-			}
-		}
-		return new String(Base64.decode(cookie));
-	}
 
 	/**
 	 * 保存注销状态
@@ -1222,16 +818,40 @@ public class GameSDKApplication {
 		return preferences.getBoolean(HYConstant.PREF_FILE_LOGOUT_STATUS, false);
 	}
 
-	public boolean isMIUIorMEIZU() {// 关闭
-		return false;
-		/*
-		 * if("Meizu".equals(android.os.Build.BRAND)){ return true; }else
-		 * if(android
-		 * .os.Build.BRAND!=null&&android.os.Build.BRAND.contains("xiaomi")){
-		 * return true; } return false;
-		 */
+
+	public String getProvidersCode() {
+		if (ProvidersCode == null || ProvidersCode.equals(""))
+			setSystem();
+		return ProvidersCode;
 	}
 
+	public void setSystem() {
+		TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+		String IMSI = telephonyManager.getSubscriberId();
+		// 返回唯一的用户ID;就是这张卡的编号神马的
+		IMSI = telephonyManager.getSubscriberId();
+		// IMSI号前面3位460是国家，紧接着后面2位00 02 07是中国移动，01 06是中国联通，03 05是中国电信。
+		if (IMSI != null && IMSI.length() >= 5) {
+			setImsi(IMSI);// 初始化imsi
+			IMSI = IMSI.substring(0, 5);
+			if (IMSI.startsWith("46000") || IMSI.startsWith("46002") || IMSI.startsWith("46007")) {
+				ProvidersCode = "1";
+				ProvidersName = "中国移动";
+			} else if (IMSI.startsWith("46001") || IMSI.startsWith("46006")) {
+				ProvidersCode = "2";
+				ProvidersName = "中国联通";
+			} else if (IMSI.startsWith("46003") || IMSI.startsWith("46005")) {
+				ProvidersCode = "3";
+				ProvidersName = "中国电信";
+			} else if (IMSI.startsWith("46020")) {
+				ProvidersName = "中国铁通";
+			}
+			ProvidersName = URLEncoder.encode(ProvidersName += "_" + IMSI);// 运营商名字是汉子，需要urlencode
+		} else {
+			ProvidersName = "";
+		}
+
+	}
 	public long getServiceTime() {
 		long local = System.currentTimeMillis() / 1000;
 		long diff = this.timeDiff;
@@ -1276,12 +896,6 @@ public class GameSDKApplication {
 	 */
 	public void saveShareUser(User user) {
 		saveShareUserLocal(user);
-		if (UserContentResover.getInstance().queryByName(user.getUserName()) != null) {
-			UserContentResover.getInstance().update(user);
-		} else {
-			UserContentResover.getInstance().insert(user);
-		}
-
 	}
 
 	/**
@@ -1369,11 +983,6 @@ public class GameSDKApplication {
 		Editor editor = preferences.edit();
 		editor.putString(HYConstant.PREF_FILE_USER_PWD, user.getNew_password());
 		editor.commit();
-		if (UserContentResover.getInstance().queryByName(user.getUserName()) != null) {
-			UserContentResover.getInstance().update(user);
-		} else {
-			UserContentResover.getInstance().insert(user);
-		}
 	}
 
 	/**
@@ -1425,7 +1034,7 @@ public class GameSDKApplication {
 	/**
 	 * 存用户设备id到本地，方块传的
 	 * 
-	 * @param device_id
+	 * @param block_device_id
 	 */
 	public void saveUserDeviceId(String block_device_id) {
 		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
@@ -1488,25 +1097,6 @@ public class GameSDKApplication {
 		user.setPassword(pwd);
 		user.setUid(uid);
 		user.setIsPay(isPay);
-		String pwd_remote = getpwdByName(userName);
-		if (pwd_remote != null) {
-			if ((!pwd.equals(pwd_remote)) && (!"".equals(pwd))) {
-				user.setPassword(pwd_remote);
-				setRemoteLogin(true);
-			}
-		} else if ("".equals(userName)) {
-			user = UserContentResover.getInstance().queryCurrent();
-			if ("".equals(user.getUserName())) {
-				GamePlayersCookieBean gocb = CookieContentResoverByCenter.getInstance().queryCookie();
-				if (gocb != null) {
-					user.setUserName(gocb.getName());
-				}
-			}
-			if (!"".equals(user.getUserName())) {
-				setRemoteLogin(true);
-			}
-		}
-
 		return user;
 	}
 
@@ -1526,38 +1116,6 @@ public class GameSDKApplication {
 		this.isStandAlone = isStandAlone;
 	}
 
-	public boolean[] getFloatSwitch() {
-		return floatSwitch;
-	}
-
-	public void setFloatSwitch(boolean[] floatSwitch) {
-		this.floatSwitch = floatSwitch;
-	}
-
-	public boolean[] getSpecialSwitch() {
-		return specialSwitch;
-	}
-
-	public void setSpecialSwitch(boolean[] specialSwitch) {
-		this.specialSwitch = specialSwitch;
-	}
-
-	// 查询密码 根据用户名
-	public String getpwdByName(String name) {
-		String[] values = { name };
-
-		Uri uri = Uri.parse(UserContentResover.getInstance().getCONTENT_URI());
-		ContentResolver resolver = GameSDKApplication.getInstance().getContext().getContentResolver();
-		Cursor cursor = resolver.query(uri, null, "userName = ? ", values, null);
-		// 判断游标是否为空
-		if ((cursor != null) && cursor.moveToFirst()) {
-			String pwd = cursor.getString(1);
-			cursor.close();
-			return pwd;
-		} else {
-			return null;
-		}
-	}
 
 	public void setVMParams() {
 		wmParams = new WindowManager.LayoutParams();
@@ -1567,269 +1125,11 @@ public class GameSDKApplication {
 		return wmParams;
 	}
 
-	/**
-	 * 保存自动登录所需要的用户信息
-	 */
-	public void saveVip(VipBean vipBean) {
-		if (context == null) {
-			return;
-		}
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
-		Editor editor = preferences.edit();
-		editor.putString(HYConstant.VIP_IS_VIP, vipBean.getIsVip());// 0 非vip
-																	// ，1轻会员
-																	// ，2会员
-		editor.putString(HYConstant.VIP_MSG, vipBean.getVipMsg());
-		editor.putString(HYConstant.VIP_PKG_SWITCH, vipBean.getVipPkgSwitch());// 悬浮窗中vip列表展示开关
-		editor.putString(HYConstant.VIP_SCHEME, vipBean.getVipScheme());
-		editor.putString(HYConstant.VIP_SWITCH, vipBean.getVipSwitch());// 悬浮窗中vip购买展示开关
-		editor.putString(HYConstant.USER_AVATAR, vipBean.getUserAvatar());
-		editor.putString(HYConstant.USER_NAME, vipBean.getUserName());
-		editor.putString(HYConstant.VIP_URL, vipBean.getVipUrl());// 购买vip活动展示地址
-		editor.putString(HYConstant.VIP_SEND_PKG_MSG, vipBean.getVipSendPkgMsg());// vip购买支付成功后提示语
-		editor.putString(HYConstant.FORUM_SWITCH, vipBean.getForumSwitch());// 论坛开关
-		editor.putString(HYConstant.FORUM_URL, vipBean.getForumUrl());// 论坛地址
-		editor.putBoolean(HYConstant.IS_VIP_GOOD, vipBean.getIsVipGood());
-		editor.commit();
-	}
 
-	/**
-	 * 获取 vipUrl
-	 */
-	public String getVipUrl() {
-		if (context == null) {
-			return null;
-		}
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
-		String vipUrl = preferences.getString(HYConstant.VIP_URL, "");
-		return vipUrl;
-	}
-
-	public VipBean getPreCenterUserMsg() {
-		if (context == null) {
-			return null;
-		}
-		VipBean vipBean = new VipBean();
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
-		String userAvatar = preferences.getString(HYConstant.USER_AVATAR, "");
-		String userName = preferences.getString(HYConstant.USER_NAME, "");
-		Boolean isVipGood = preferences.getBoolean(HYConstant.IS_VIP_GOOD, true);
-		vipBean.setUserAvatar(userAvatar);
-		vipBean.setUserName(userName);
-		vipBean.setIsVipGood(isVipGood);
-		return vipBean;
-	}
-
-	public String getVipIsVip() {
-		if (context == null) {
-			return null;
-		}
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
-		String isVip = preferences.getString(HYConstant.VIP_IS_VIP, "0");
-		return isVip;
-	}
-
-	public String getVipSwitch() {
-		if (context == null) {
-			return null;
-		}
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
-		String vipSwitch = preferences.getString(HYConstant.VIP_SWITCH, "0");
-		return vipSwitch;
-	}
-
-	public String getVipScheme() {
-		if (context == null) {
-			return null;
-		}
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
-		String vipSwitch = preferences.getString(HYConstant.VIP_SCHEME, "0");
-		return vipSwitch;
-	}
-
-	public String getForumSwitch() {
-		if (context == null) {
-			return null;
-		}
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
-		String forumSwitch = preferences.getString(HYConstant.FORUM_SWITCH, "0");
-		return forumSwitch;
-	}
-
-	public BitmapDrawable getPreUserAvatar(String useravatar, ImageView preIv) {
-		this.preIv = preIv;
-		if (preAvatar.containsKey(useravatar)) {
-			return preAvatar.get(useravatar);
-		} else {
-			getBitmapDrawable(useravatar);
-			return null;
-		}
-	}
-
-	private void getBitmapDrawable(String useravatar) {
-		new AsyncTask<String, Integer, Bitmap>() {
-			private String url = null;
-
-			@Override
-			protected void onPostExecute(Bitmap result) {
-				if (result != null) {
-					bd = new BitmapDrawable(result);
-					preAvatar.put(url, bd);
-					Message msg = Message.obtain();
-					msg.obj = url;
-					msg.what = 1;
-					mHandler.sendMessage(msg);
-				}
-			}
-
-			@Override
-			protected Bitmap doInBackground(String... params) {
-				url = params[0];
-				Bitmap bitmap = LoadImageAsyncTask.GetBitmapByUrl(params[0]);
-				return bitmap;
-			}
-		}.execute(useravatar);
-	}
-
-	public void clearHashMap() {
-		preAvatar = null;
-	}
-
-	public String getNewPackageID() {
-		return newPackageID;
-	}
-
-	public void setNewPackageID(String newPackageID) {
-		this.newPackageID = newPackageID;
-	}
-
-	public String getForumUrl() {
-		if (context == null) {
-			return null;
-		}
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
-		String forumUrl = preferences.getString(HYConstant.FORUM_URL, "");
-		return forumUrl;
-	}
-
-	public String getVipMsg() {
-		if (context == null) {
-			return null;
-		}
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
-		String isVip = preferences.getString(HYConstant.VIP_MSG, "");
-		return isVip;
-	}
-
-	public String getToken() {
-		if (context != null) {
-			return Secure.getString(context.getContentResolver(), Secure.ANDROID_ID)
-					+ GameSDKApplication.getInstance().getAppType();
-		}
-		return null;
-	}
-
-	public String getPlushSign() {
-		return Util.md5(
-				HYConstant.PID + "&" + HYConstant.getSDKVersion() + "&" + GameSDKApplication.getInstance().getToken());
-	}
-
-	public String getPlushRecvSign() {
-		return Util.md5(GameSDKApplication.getInstance().getMid() + "&" + HYConstant.PID + "&"
-				+ HYConstant.getSDKVersion() + "&" + GameSDKApplication.getInstance().getToken());
-	}
-
-	public String getPckNameBySign() {
-		if (context != null) {
-			allPackageList = Util.getAllPagckage(context);
-			for (int i = 0; i <= allPackageList.size() - 1; i++) {
-				ResolveInfo localResolveInfo = allPackageList.get(i);
-				String str1 = localResolveInfo.activityInfo.packageName;
-				if (str1 != null && HYConstant.DEFAULT_PACKNAME.equals(str1)) {
-					Logger.d("pack&ver", "first:" + str1);
-					return HYConstant.DEFAULT_PACKNAME;
-				}
-				String str2 = Util.getSignMd5(context, str1);
-				if (str2 != null && HYConstant.YKMAIN_SIGN_MD5.equals(str2)) {
-					Logger.d("pack&ver", "second:" + str1);
-					return str1;
-				}
-			}
-		}
-		Logger.d("pack&ver", "thrid！");
-		return "";
-	}
-
-	// 取出source(从合乐智趣主客来源位置信息)
-	public HashMap<String, String> getGameFromSource() {
-		HashMap<String, String> gameCenterSourceMap = new HashMap<String, String>();
-		if (context == null) {
-			return gameCenterSourceMap;
-		}
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
-		gameCenterSourceMap.put(HYConstant.COL_NAME_GAME_TRACE_SOURCE_1,
-				preferences.getString(HYConstant.COL_NAME_GAME_TRACE_SOURCE_1, ""));
-		gameCenterSourceMap.put(HYConstant.COL_NAME_GAME_TRACE_SOURCE_2,
-				preferences.getString(HYConstant.COL_NAME_GAME_TRACE_SOURCE_2, ""));
-		return gameCenterSourceMap;
-	}
-
-	// 查询并存储source(从合乐智趣主客来源位置信息)
-	public void setGameFromSource(HashMap<String, String> gameCenterSourceMap) {
-		if (context == null) {
-			return;
-		}
-		SharedPreferences preferences = context.getSharedPreferences(HYConstant.PREF_FILE_USER, Context.MODE_PRIVATE);
-		Editor editor = preferences.edit();
-		editor.putString(HYConstant.COL_NAME_GAME_TRACE_SOURCE_1,
-				gameCenterSourceMap.get(HYConstant.COL_NAME_GAME_TRACE_SOURCE_1));
-		editor.putString(HYConstant.COL_NAME_GAME_TRACE_SOURCE_2,
-				gameCenterSourceMap.get(HYConstant.COL_NAME_GAME_TRACE_SOURCE_2));
-		editor.commit();
-	}
-
-	public void destroy() {
-		if (app != null) {
-			app = null;
-		}
-
-	}
-
-	public boolean isInU3dActivity() {
-		return isInU3dActivity;
-	}
-
-	public void setInU3dActivity(boolean isInU3dActivity) {
-		this.isInU3dActivity = isInU3dActivity;
-	}
-
-	public boolean isInU2dOrCocos2dxActivity() {
-		return this.isInCocos2dxActivity || this.isInU3dActivity;
-	}
-
-	public boolean isAddRecordFunction() {
-		/*
-		 * if(GameSDKApplication.getInstance().isInCocos2dxActivity()){
-		 * if(YKRecordUploader.getCocosScrRecorder()!=null){ return true; }
-		 * }else{ if(YKRecordUploader.getUnity3dScrRecorder()!=null){ return
-		 * true; } } return false;
-		 */
-		return isAddRecordFunction;
-	}
-
-	public void initRecord() {
-		// isAddRecordFunction = true;
-		// YKAPIFactory.initSDK(context, GameSDKApplication
-		// .getInstance().getClient_id(), GameSDKApplication.getInstance()
-		// .getClient_secret());//多个SDK执行一次即可
-		// com.ykcloud.sdk.platformtools.Log.setLevel(0);//设置录屏sdk log
-	}
 
 	/**
 	 * 获取当前应用程序的包名
-	 * 
-	 * @param context
-	 *            上下文对象
+	 *
 	 * @return 返回包名
 	 */
 	public String getPageName() {
@@ -1849,7 +1149,7 @@ public class GameSDKApplication {
 	/**
 	 * 存储实名认证开关状态
 	 * 
-	 * @param status
+	 * @param status_pay
 	 */
 	public void saveCertifitationStatus(String status_auth, String status_pay) {
 		if (context == null) {
@@ -1864,8 +1164,6 @@ public class GameSDKApplication {
 
 	/**
 	 * 获取实名认证状态开关
-	 * 
-	 * @param context
 	 * @return
 	 */
 	public String getCertifitationStatus() {
@@ -1879,8 +1177,6 @@ public class GameSDKApplication {
 
 	/**
 	 * 获取实名认证支付状态开关on 开，off 关
-	 * 
-	 * @param context
 	 * @return
 	 */
 	public String getCertifitationPayStatus() {
@@ -1909,8 +1205,7 @@ public class GameSDKApplication {
 
 	/**
 	 * 获取用户实名认证状态
-	 * 
-	 * @param context
+	 *
 	 * @return
 	 */
 	public boolean getUserCertifitationStatus() {

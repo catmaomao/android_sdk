@@ -9,35 +9,22 @@
 
 package com.heyijoy.gamesdk.widget;
 
-import com.heyijoy.gamesdk.act.GameSDKApplication;
-import com.heyijoy.gamesdk.act.SMSReceiver;
 import com.heyijoy.gamesdk.act.HYCallBack;
-import com.heyijoy.gamesdk.data.Bean;
 import com.heyijoy.gamesdk.data.User;
-import com.heyijoy.gamesdk.http.HttpApi;
-import com.heyijoy.gamesdk.http.HttpRequestManager;
-import com.heyijoy.gamesdk.lib.HYConstant;
-import com.heyijoy.gamesdk.util.Logger;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.util.Util;
 import com.heyijoy.gamesdk.R;
 
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.IntentFilter;
 import android.graphics.Bitmap;
-import android.os.CountDownTimer;
-import android.os.Handler;
-import android.os.Message;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.MeasureSpec;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * @author msh

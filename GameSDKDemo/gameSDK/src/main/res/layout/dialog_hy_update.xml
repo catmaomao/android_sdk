@@ -49,7 +49,7 @@
             android:textSize="@dimen/HY_GameSDK_28PX" />
 
         <TextView
-            android:layout_width="0.5dp"
+            android:layout_width="1dp"
             android:layout_height="fill_parent"
             android:background="@color/hy_button_text" >
         </TextView>

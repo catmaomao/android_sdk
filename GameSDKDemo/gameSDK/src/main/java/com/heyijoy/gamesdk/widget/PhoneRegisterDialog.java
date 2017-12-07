@@ -15,7 +15,7 @@ import com.heyijoy.gamesdk.data.Bean;
 import com.heyijoy.gamesdk.data.User;
 import com.heyijoy.gamesdk.http.HttpApi;
 import com.heyijoy.gamesdk.http.HttpRequestManager;
-import com.heyijoy.gamesdk.lib.HYConstant;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.util.Util;
 import com.heyijoy.gamesdk.R;
 
@@ -23,9 +23,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.CountDownTimer;
-import android.text.Editable;
 import android.text.TextUtils;
-import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;

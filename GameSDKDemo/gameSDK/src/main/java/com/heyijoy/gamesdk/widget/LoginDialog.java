@@ -6,22 +6,18 @@
 
 package com.heyijoy.gamesdk.widget;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import com.heyijoy.gamesdk.act.GameSDKApplication;
 import com.heyijoy.gamesdk.act.SMSReceiver;
 import com.heyijoy.gamesdk.activity.HYQQLoginActivity;
 import com.heyijoy.gamesdk.activity.HYWeiBoLoginActivity;
 import com.heyijoy.gamesdk.act.HYCallBack;
-import com.heyijoy.gamesdk.act.HYCallBackStr;
 import com.heyijoy.gamesdk.data.Bean;
 import com.heyijoy.gamesdk.data.User;
 import com.heyijoy.gamesdk.data.HYLoginFailReason;
 import com.heyijoy.gamesdk.data.HYThridParams;
 import com.heyijoy.gamesdk.http.HttpApi;
 import com.heyijoy.gamesdk.http.HttpRequestManager;
-import com.heyijoy.gamesdk.lib.HYConstant;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.util.Util;
 import com.sina.weibo.sdk.WeiboAppManager;
 import com.heyijoy.gamesdk.R;
@@ -42,7 +38,6 @@ import android.telephony.TelephonyManager;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;

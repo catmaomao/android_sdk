@@ -1,38 +1,9 @@
 package com.heyijoy.gamesdk.memfloat;
 
-import java.util.Timer;
-import java.util.TimerTask;
 
-
-import android.app.AlertDialog;
 import android.app.Service;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.os.Handler;
 import android.os.IBinder;
-import android.os.Message;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.View.OnTouchListener;
-import android.view.WindowManager;
-import android.view.animation.TranslateAnimation;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.heyijoy.gamesdk.act.GameSDKApplication;
-import com.heyijoy.gamesdk.act.HYPlatform;
-import com.heyijoy.gamesdk.activity.HYInitActivity;
-import com.heyijoy.gamesdk.lib.HYConstant;
-import com.heyijoy.gamesdk.util.Util;
-import com.heyijoy.gamesdk.R;
 
 /**
  * 悬浮窗service

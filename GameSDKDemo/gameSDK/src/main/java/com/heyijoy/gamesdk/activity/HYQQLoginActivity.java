@@ -16,7 +16,7 @@ import com.tencent.connect.common.Constants;
 import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
-import com.heyijoy.gamesdk.lib.HYConstant;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.R;
 import com.heyijoy.gamesdk.util.QQUtil;
 import com.heyijoy.gamesdk.util.Util;

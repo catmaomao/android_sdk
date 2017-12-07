@@ -4,7 +4,7 @@ ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/A
 INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:1-291:12
 INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:1-291:12
 INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:1-291:12
-MERGED from [:gameSDK] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:gameSDK] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [:portalsdk] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/portalsdk/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-19:12
 INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:1-291:12
 INJECTED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:2:1-291:12
@@ -33,6 +33,8 @@ ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/A
 		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:8:22-73
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:9:5-79
+MERGED from [:gameSDK] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-79
+MERGED from [:gameSDK] /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDK/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from /Users/mashaohu/zhiyou/android_sdk/GameSDKDemo/gameSDKDemo/src/main/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.READ_PHONE_STATE

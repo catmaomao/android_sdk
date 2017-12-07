@@ -1,8 +1,6 @@
 package com.tencent.tmgp.blockcell;
 
-import com.tencent.tmgp.blockcell.R;
 import com.heyijoy.gamesdk.act.HYPlatform;
-import com.heyijoy.gamesdk.lib.HYConstant;
 
 import android.app.Activity;
 import android.content.Intent;

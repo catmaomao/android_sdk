@@ -16,8 +16,7 @@ import java.util.Iterator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.heyijoy.gamesdk.http.HttpApi;
-import com.heyijoy.gamesdk.lib.HYConstant;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.util.Logger;
 
 import android.content.BroadcastReceiver;

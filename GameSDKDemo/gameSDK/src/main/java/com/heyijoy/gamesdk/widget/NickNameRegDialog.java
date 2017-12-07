@@ -6,18 +6,6 @@
 
 package com.heyijoy.gamesdk.widget;
 
-import com.heyijoy.gamesdk.act.GameSDKApplication;
-import com.heyijoy.gamesdk.act.HYCallBack;
-import com.heyijoy.gamesdk.animation.FadeAnimation;
-import com.heyijoy.gamesdk.data.Bean;
-import com.heyijoy.gamesdk.data.User;
-import com.heyijoy.gamesdk.data.HYLoginFailReason;
-import com.heyijoy.gamesdk.http.HttpApi;
-import com.heyijoy.gamesdk.http.HttpRequestManager;
-import com.heyijoy.gamesdk.lib.HYConstant;
-import com.heyijoy.gamesdk.util.Util;
-import com.heyijoy.gamesdk.R;
-
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -35,6 +23,17 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.heyijoy.gamesdk.R;
+import com.heyijoy.gamesdk.act.GameSDKApplication;
+import com.heyijoy.gamesdk.act.HYCallBack;
+import com.heyijoy.gamesdk.data.Bean;
+import com.heyijoy.gamesdk.data.HYLoginFailReason;
+import com.heyijoy.gamesdk.data.User;
+import com.heyijoy.gamesdk.http.HttpApi;
+import com.heyijoy.gamesdk.http.HttpRequestManager;
+import com.heyijoy.gamesdk.constants.HYConstant;
+import com.heyijoy.gamesdk.util.Util;
 
 /**
  * @author msh
@@ -136,8 +135,8 @@ public class NickNameRegDialog extends Dialog {
 
 		if (!isfromClick) {
 			tv_error.setVisibility(View.VISIBLE);
-			FadeAnimation tvErrorAnimation = new FadeAnimation(7000, 1, true);
-			tvErrorAnimation.start(tv_error);
+//			FadeAnimation tvErrorAnimation = new FadeAnimation(7000, 1, true);
+//			tvErrorAnimation.start(tv_error);
 		} else {
 			tv_error.setVisibility(View.GONE);
 		}

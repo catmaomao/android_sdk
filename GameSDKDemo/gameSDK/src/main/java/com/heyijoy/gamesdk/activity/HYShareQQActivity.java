@@ -2,7 +2,7 @@ package com.heyijoy.gamesdk.activity;
 
 import com.heyijoy.gamesdk.act.GameSDKApplication;
 import com.heyijoy.gamesdk.data.HYThridParams;
-import com.heyijoy.gamesdk.lib.HYConstant;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.R;
 import com.heyijoy.gamesdk.util.Util;
 import com.heyijoy.gamesdk.widget.HYProgressDlg;

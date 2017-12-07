@@ -1,47 +1,5 @@
 package com.heyijoy.gamesdk.act;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-
-import com.heyijoy.gamesdk.announcement.AnnouncementCache;
-import com.heyijoy.gamesdk.announcement.AnnouncementClickListener;
-import com.heyijoy.gamesdk.announcement.PopUpBean;
-import com.heyijoy.gamesdk.data.Bean;
-import com.heyijoy.gamesdk.data.CookieContentResover;
-import com.heyijoy.gamesdk.data.CookieContentResoverByCenter;
-import com.heyijoy.gamesdk.data.User;
-import com.heyijoy.gamesdk.data.UserContentResover;
-import com.heyijoy.gamesdk.data.VipBean;
-import com.heyijoy.gamesdk.data.HYPayBean;
-import com.heyijoy.gamesdk.data.HYThridParams;
-import com.heyijoy.gamesdk.http.HttpApi;
-import com.heyijoy.gamesdk.http.HttpRequestManager;
-import com.heyijoy.gamesdk.lib.HYBuildConfig;
-import com.heyijoy.gamesdk.lib.HYConstant;
-import com.heyijoy.gamesdk.memfloat.FloatService;
-import com.heyijoy.gamesdk.memfloat.FloatViewService;
-import com.heyijoy.gamesdk.operatorpay.OpPay;
-import com.heyijoy.gamesdk.util.Logger;
-import com.heyijoy.gamesdk.util.Util;
-import com.heyijoy.gamesdk.widget.LoginDialog;
-import com.heyijoy.gamesdk.widget.NickNameRegDialog;
-import com.heyijoy.gamesdk.widget.PayDialog;
-import com.heyijoy.gamesdk.widget.SaveAccountDialog;
-import com.heyijoy.gamesdk.widget.ShareDialog;
-import com.heyijoy.gamesdk.widget.WebViewFullscreenActivity;
-import com.heyijoy.sdk.CallBack;
-import com.heyijoy.sdk.ShareParams;
-import com.heyijoy.sdk.analytics.UDAgent;
-import com.heyijoy.gamesdk.widget.CertificationPayTipDialog;
-import com.heyijoy.gamesdk.widget.CertificationTipDialog;
-import com.heyijoy.gamesdk.widget.HYDialog;
-import com.heyijoy.gamesdk.widget.HYProgressDlg;
-import com.heyijoy.gamesdk.R;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -53,16 +11,43 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Handler;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.heyijoy.gamesdk.R;
+import com.heyijoy.gamesdk.constants.HYBuildConfig;
+import com.heyijoy.gamesdk.constants.HYConstant;
+import com.heyijoy.gamesdk.data.Bean;
+import com.heyijoy.gamesdk.data.HYPayBean;
+import com.heyijoy.gamesdk.data.HYThridParams;
+import com.heyijoy.gamesdk.data.User;
+import com.heyijoy.gamesdk.http.HttpApi;
+import com.heyijoy.gamesdk.memfloat.FloatViewService;
+import com.heyijoy.gamesdk.util.Logger;
+import com.heyijoy.gamesdk.util.Util;
+import com.heyijoy.gamesdk.widget.CertificationPayTipDialog;
+import com.heyijoy.gamesdk.widget.CertificationTipDialog;
+import com.heyijoy.gamesdk.widget.HYDialog;
+import com.heyijoy.gamesdk.widget.HYProgressDlg;
+import com.heyijoy.gamesdk.widget.LoginDialog;
+import com.heyijoy.gamesdk.widget.PayDialog;
+import com.heyijoy.gamesdk.widget.SaveAccountDialog;
+import com.heyijoy.gamesdk.widget.ShareDialog;
+import com.heyijoy.sdk.CallBack;
+import com.heyijoy.sdk.ShareParams;
+import com.heyijoy.sdk.analytics.UDAgent;
+
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * @author msh
@@ -121,12 +106,6 @@ public class HYPlatform {
 			@Override
 			public void onClick(View arg0) {
 				callback.onSuccess(null);
-				AnnouncementCache.getInstance().destroy();
-				PopUpBean.getInstance().destroy();
-				UserContentResover.getInstance().destroy();
-				CookieContentResover.getInstance().destroy();
-				CookieContentResoverByCenter.getInstance().destroy();
-				GameSDKApplication.getInstance().clearTableListID();
 				HYPlatform.closeHYFloat(context);
 				dlg.cancel();
 			}
@@ -163,10 +142,6 @@ public class HYPlatform {
 		// GameSDKApplication.getInstance().deletePwdINPref(context);
 		// GameSDKApplication.getInstance().saveCookie("");//清除cookie
 		GameSDKApplication.getInstance().saveLogoutSharePreferences(true);// 保存为注销状态
-		GameSDKApplication.getInstance().setRemoteLogin(false);// 保存为注销状态
-		GameSDKApplication.getInstance().setHasTask(false);
-		GameSDKApplication.getInstance().clearTableListID();
-		GameSDKApplication.getInstance().setTableListID("change");
 		// 获取用户注销前的登录状态
 		GameSDKApplication.getInstance()
 				.SetBeforeLogoutUserLoginType(GameSDKApplication.getInstance().getUserLoginType());
@@ -535,9 +510,9 @@ public class HYPlatform {
 					}
 				};
 
-				OpPay opLoading = new OpPay();
-				String amount = String.valueOf(moneyFen / 100);
-				opLoading.query(activity, amount, queryCallBack);
+//				OpPay opLoading = new OpPay();
+//				String amount = String.valueOf(moneyFen / 100);
+//				opLoading.query(activity, amount, queryCallBack);
 			} catch (Exception e) {
 				if (payLoading != null && payLoading.isShowing())
 					payLoading.dismiss();
@@ -608,14 +583,13 @@ public class HYPlatform {
 	 * 开启悬浮窗接口
 	 * 
 	 * @param context
-	 * @param items
 	 * @param callback
 	 */
 	public static void startHYFloat(final Context context, final HYCallBackWithContext callback) {
-		openFloat(context, callback, new VipBean());
+		openFloat(context, callback);
 	}
 
-	private static void openFloat(Context context, final HYCallBackWithContext callback, VipBean vipBean) {
+	private static void openFloat(Context context, final HYCallBackWithContext callback) {
 		Intent intent = new Intent();
 		intent.setClass(context, FloatViewService.class);
 		if (callback != null) {
@@ -642,7 +616,6 @@ public class HYPlatform {
 	 * 开启悬浮窗（无切换账号回调）
 	 * 
 	 * @param context
-	 * @param items
 	 */
 	public static void startHYFloat(Context context) {
 		startHYFloat(context, null);
@@ -739,20 +712,6 @@ public class HYPlatform {
 		}
 	}
 
-	public static void buyVip(Activity activity) {
-		buyVip(activity, "2");// 1sdk悬浮窗， 2游戏
-	}
-
-	public static void buyVip(Context context, String entrytypes) {
-		Intent intent = new Intent(context, WebViewFullscreenActivity.class);
-		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-		intent.putExtra("entrytypes", entrytypes);// 1sdk悬浮窗， 2游戏 , 3消息系统
-		context.startActivity(intent);
-	}
-
-	public static Boolean getIsVip() {
-		return GameSDKApplication.getInstance().getVipIsVip().equals("0") ? false : true;
-	}
 
 	public static String getWXappid() {
 		return HYConstant.WX_APPID;

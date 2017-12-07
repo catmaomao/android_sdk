@@ -12,52 +12,30 @@
 
 package com.heyijoy.gamesdk.http;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLEncoder;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.List;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import android.annotation.SuppressLint;
+import android.text.TextUtils;
+import android.util.Log;
 
 import com.heyijoy.gamesdk.act.GameSDKApplication;
 import com.heyijoy.gamesdk.act.HYCallBack;
 import com.heyijoy.gamesdk.act.HYCallBackStr;
-import com.heyijoy.gamesdk.announcement.Announcement;
-import com.heyijoy.gamesdk.announcement.AnnouncementCache;
-import com.heyijoy.gamesdk.announcement.PopUpBean;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.data.Bean;
-import com.heyijoy.gamesdk.data.BonusBean;
-import com.heyijoy.gamesdk.data.MsgBean;
-import com.heyijoy.gamesdk.data.PayBean;
-import com.heyijoy.gamesdk.data.SourceFromGameCenterContentResover;
-import com.heyijoy.gamesdk.data.User;
 import com.heyijoy.gamesdk.data.CommitData;
-import com.heyijoy.gamesdk.data.VersionInfo;
 import com.heyijoy.gamesdk.data.HYPayBean;
 import com.heyijoy.gamesdk.data.InitParams;
+import com.heyijoy.gamesdk.data.PayBean;
+import com.heyijoy.gamesdk.data.User;
+import com.heyijoy.gamesdk.data.VersionInfo;
 import com.heyijoy.gamesdk.http.IHttpRequest.IHttpRequestCallBack;
-import com.heyijoy.gamesdk.lib.HYBuildConfig;
-import com.heyijoy.gamesdk.lib.HYConstant;
-import com.heyijoy.gamesdk.util.EncryptUtils;
 import com.heyijoy.gamesdk.util.Logger;
-import com.heyijoy.gamesdk.util.MyParse;
 import com.heyijoy.gamesdk.util.Util;
-import com.heyijoy.sdk.HeyiJoySDK;
 
-import android.annotation.SuppressLint;
-import android.text.TextUtils;
-import android.util.Log;
-import android.widget.Toast;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.net.URLEncoder;
+import java.util.Iterator;
 
 /**
  * ClassName:HttpApi
@@ -121,9 +99,6 @@ public class HttpApi {
 		}
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		HttpRequestManager httpRequest = new HttpRequestManager();
 		IHttpRequestCallBack callBack = new IHttpRequestCallBack() {
 			@Override
@@ -235,9 +210,6 @@ public class HttpApi {
 		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
 		httpIntent.putParams("version_code", GameSDKApplication.getInstance().getVersionCode() + "");
 		HttpRequestManager httpRequest = new HttpRequestManager();
@@ -365,9 +337,6 @@ public class HttpApi {
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
 		httpIntent.putParams("newpassword", user.getNew_password());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		httpIntent.putParams("password", user.getPassword());
 		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
 		httpIntent.putParams("userid", GameSDKApplication.getInstance().getShareUser().getUid());
@@ -424,9 +393,6 @@ public class HttpApi {
 		}
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
 		httpIntent.putParams("version_code", GameSDKApplication.getInstance().getVersionCode() + "");
 		HttpRequestManager httpRequest = new HttpRequestManager();
@@ -470,10 +436,7 @@ public class HttpApi {
 		}
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		// httpIntent.putParams("phone", user.getUserName());
+		httpIntent.putParams("phone", user.getUserName());
 		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
 		HttpRequestManager httpRequest = new HttpRequestManager();
 		IHttpRequestCallBack callBack = new IHttpRequestCallBack() {
@@ -525,9 +488,6 @@ public class HttpApi {
 		}
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		httpIntent.putParams("phone", user.getUserName());
 		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
 		httpIntent.putParams("verify_code", verifyNo);
@@ -575,9 +535,6 @@ public class HttpApi {
 		}
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		httpIntent.putParams("phone", phoneNO);
 		httpIntent.putParams("sdkver", HYConstant.getSDKVersion());
 		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
@@ -628,9 +585,6 @@ public class HttpApi {
 		}
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		httpIntent.putParams("phone", phone);
 		httpIntent.putParams("sdkver", HYConstant.getSDKVersion());
 		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
@@ -728,9 +682,6 @@ public class HttpApi {
 		}
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		httpIntent.putParams("phone", mobile);
 		httpIntent.putParams("phone_verify", verifyNo);
 		httpIntent.putParams("sdkver", HYConstant.getSDKVersion());
@@ -782,8 +733,6 @@ public class HttpApi {
 	 * 重置密码
 	 * 
 	 * @param phone
-	 * @param notifyNO
-	 * @param pwd
 	 * @param callBack
 	 */
 	public void retrievePwd(final String phone, String verifycode, final String newpassword,
@@ -827,99 +776,6 @@ public class HttpApi {
 	}
 
 	/**
-	 * 获取任务列表
-	 */
-	public void requestTask(final HYCallBack callBack) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_TASK_LIST, HttpRequestManager.METHOD_POST);
-		httpIntent.putParams("appkey", GameSDKApplication.getInstance().getAppkey());
-		httpIntent.putParams("game_id", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("platform", "2");
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				MyParse.parseTask(result, callBack);
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-
-		httpRequest.request(httpIntent, callBack1, "1");
-	}
-
-	/**
-	 * 获取任务积分
-	 */
-	public void requestTaskBonus(final HYCallBack callBack, String taskId, String status) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_TASK_BONUS, HttpRequestManager.METHOD_POST);
-		httpIntent.putParams("appkey", GameSDKApplication.getInstance().getAppkey());
-		httpIntent.putParams("game_id", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("platform", "2");
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("status", status);
-		httpIntent.putParams("task_id", taskId);
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				Logger.d("pack&ver", "jsonData-Bonus=" + result);
-				BonusBean bonusBean = new BonusBean();
-				try {
-					JSONObject json = new JSONObject(result);
-					String status = json.getString("status");
-					if ("failed".equals(status)) {
-						String desc = json.getString("desc");
-						bonusBean.setStatus(status);
-						bonusBean.setDesc(desc);
-					} else {
-						String bonus = json.getString("bonus");
-						bonusBean.setStatus(status);
-						bonusBean.setBonus(bonus);
-					}
-					callBack.onSuccess(bonusBean);
-				} catch (Exception e) {
-					e.printStackTrace();
-					Logger.d("pack&ver", "jsonData-Bonus=getTaskBonus-error");
-					exceptionFailed(HYConstant.EXCEPTION_CODE, "getTaskBonus-error", callBack);
-				}
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-
-		httpRequest.request(httpIntent, callBack1, "1");
-	}
-
-	/**
 	 * 从后台取版本
 	 */
 	public void getRemoteVersion(final HYCallBack callBack) {
@@ -955,16 +811,6 @@ public class HttpApi {
 
 						GameSDKApplication.getInstance().setPhoneRegOpen(isPhoneRegOpen);
 						GameSDKApplication.getInstance().setNameRegOpen(isNameRegOpen);
-
-						GameSDKApplication.getInstance().setShowBindingDlgProbability(Integer.parseInt(probability));
-						if (upMSGMobile != null && (!"".equals(upMSGMobile)) && downMSGMobile != null
-								&& (!"".equals(downMSGMobile))) {
-							HYConstant.REG_MOBILE_UP_NO = upMSGMobile;
-							String[] mobiles = downMSGMobile.split(",");
-							for (int i = 0; i < mobiles.length; i++) {
-								HYConstant.REG_MOBILE_RECEIVE_LIST.add(mobiles[i]);
-							}
-						}
 
 						GameSDKApplication.getInstance().initTimeDiff(timeDiff);
 						if (json.getBoolean("is_update")) {// app升级更新
@@ -1008,9 +854,6 @@ public class HttpApi {
 
 		httpIntent.putParams("appid", GameSDKApplication.getInstance().getAppid());
 		httpIntent.putParams("appkey", GameSDKApplication.getInstance().getAppkey());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		httpIntent.putParams("network", Util.netWorkType());
 		httpIntent.putParams("version_code", GameSDKApplication.getInstance().getVersionCode() + "");
 		httpIntent.putParams("bundle_id", GameSDKApplication.getInstance().getPageName() + "");
@@ -1060,30 +903,6 @@ public class HttpApi {
 			}
 		};
 		httpRequestManager.requestWX(url, callBack1);
-	}
-
-	public void requestFloatOrder(final HYCallBack callBack) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_FLOAT_ORDER, HttpRequestManager.METHOD_GET);
-		httpIntent.putParams("ver_code", HYConstant.getSDKVersion());
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-
-		HttpRequestManager httpRequest = new HttpRequestManager();
-
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				MyParse.parseFloatOrder(result, callBack);
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-
-		httpRequest.request(httpIntent, callBack1);
 	}
 
 	public void allFalse() {
@@ -1144,9 +963,6 @@ public class HttpApi {
 		}
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
 		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
 
@@ -1289,9 +1105,6 @@ public class HttpApi {
 		}
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		httpIntent.putParams("password", password);
 		httpIntent.putParams("sdkver", HYConstant.getSDKVersion());
 		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
@@ -1352,99 +1165,6 @@ public class HttpApi {
 		httpRequest.request(httpIntent, callBack1);
 	}
 
-	/**
-	 * 获取活动
-	 */
-	public void requestAnnouncement() {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_ANNOUNCEMENT, HttpRequestManager.METHOD_GET);
-		httpIntent.putParams("appkey", GameSDKApplication.getInstance().getAppkey());
-		httpIntent.putParams("gameid", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("sdkver", HYConstant.getSDKVersion());
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				try {
-					JSONObject jsonResult = new JSONObject(result);
-					String status = jsonResult.getString("status");
-					if ("failed".equals(status)) {
-					} else {
-						JSONArray jsonArr = jsonResult.getJSONArray("activities");
-						List<Announcement> announcements = new ArrayList<Announcement>();
-						AnnouncementCache announcementCache = AnnouncementCache.getInstance();
-						if (jsonArr.length() > 0) {// 有活动
-							JSONObject json0 = (JSONObject) jsonArr.get(0);
-							announcementCache.setImgadd(json0.getString("image"));
-							announcementCache.setImgurl(json0.getString("image_link"));
-							announcementCache.setId(json0.getString("id"));
-							announcementCache.setTitle(jsonResult.getString("title"));
-							if (json0.has("image_pack_id")) {
-								announcementCache.setIntentId(json0.getString("image_pack_id"));
-							}
-							try {
-								announcementCache.setSkipType(json0.getString("image_skip_type"));
-							} catch (Exception e) {
-							}
-
-							LoadImageAsyncTask imageLoadTask = new LoadImageAsyncTask(announcementCache);
-							imageLoadTask.execute();
-						}
-
-						for (int j = 0; j < jsonArr.length(); j++) {
-							Announcement announcement = new Announcement();
-							JSONObject json = (JSONObject) jsonArr.get(j);
-							String seq = json.getString("seq");
-							announcement.setSkipType(json.getString("skip_type"));
-							announcement.setContent(json.getString("content"));
-							announcement.setUrlAdd(json.getString("link"));
-							announcement.setUrlContent(json.getString("link_text"));
-							announcement.setId(json.getString("id"));
-							announcement.setTitle(json.getString("title"));
-							if (json.has("pack_id")) {
-								announcement.setIntentId(json.getString("pack_id"));
-							}
-
-							announcements.add(announcement);
-						}
-						announcementCache.setAnnouncements(announcements);
-
-						JSONObject jsonPopUp = jsonResult.getJSONObject("popup");
-						PopUpBean popBean = PopUpBean.getInstance();
-						popBean.setId(jsonPopUp.getString("id"));
-						popBean.setImageadd(jsonPopUp.getString("image"));
-						popBean.setImageurl(jsonPopUp.getString("image_link"));
-						popBean.setVideo_link(jsonPopUp.getString("video_link"));
-						popBean.setVideo_vid(jsonPopUp.getString("video_vid"));
-						popBean.setSkipType(jsonPopUp.getString("skip_type"));
-						if (jsonPopUp.has("pack_id")) {
-							popBean.setIntentId(jsonPopUp.getString("pack_id"));
-						}
-						LoadImageAsyncTask quitimageLoadTask = new LoadImageAsyncTask(popBean);
-						quitimageLoadTask.execute();
-					}
-				} catch (Exception e) {
-				}
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
 
 	/**
 	 * 询问是否有福利
@@ -1460,9 +1180,6 @@ public class HttpApi {
 		}
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		httpIntent.putParams("sdkver", HYConstant.getSDKVersion());
 		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
 		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
@@ -1482,175 +1199,10 @@ public class HttpApi {
 		httpRequest.request(httpIntent, callBack1);
 	}
 
-	/**
-	 * 请求短信支付接口
-	 * 
-	 * @param amount
-	 * @param orderID
-	 * @param callBackUrl
-	 * @param callBack
-	 */
-	public void requestSMSPay(HYPayBean ykPayBean, final HYCallBack callBack) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_PAY_SMS, HttpRequestManager.METHOD_POST);
-		httpIntent.putParams("amount", ykPayBean.getAmount());
-		httpIntent.putParams("appkey", GameSDKApplication.getInstance().getAppkey());
-		httpIntent.putParams("apporderID", ykPayBean.getAppOrderId());
-		httpIntent.putParams("gameCallbackUrl", ykPayBean.getNotifyUri());
-		httpIntent.putParams("gameid", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("good_name", URLEncoder.encode(ykPayBean.getProductName()));
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("opid", GameSDKApplication.getInstance().getProvidersCode());// 运营商
-																							// ID，1:移动
-																							// 2:联通
-																							// 3:电信
-		if (ykPayBean.getAppExt1() != null && !ykPayBean.getAppExt1().equals(""))
-			httpIntent.putParams("passthrough", ykPayBean.getAppExt1());// 透传参数
-		httpIntent.putParams("pay_status", "1");// 1:能够计费 0:不能计费 2:能够部分计费
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				try {
-					JSONObject json = new JSONObject(result);
-					String status = json.getString("status");
-					if ("failed".equals(status)) {
-						statusFailed(json, callBack);
-					} else {
-						String orderid = json.getString("orderid");
-						PayBean payBean = new PayBean();
-						payBean.setParams(orderid);
-						callBack.onSuccess(payBean);
-					}
-				} catch (Exception e) {
-					e.printStackTrace();
-					exceptionFailed(HYConstant.EXCEPTION_CODE, e.getMessage(), callBack);
-				}
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
-
-	/**
-	 * 请求会员礼包接口
-	 * 
-	 * @param ykPayBean
-	 * @param callBack
-	 */
-	public void requestIsVip(final HYCallBack callBack) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_BUY_VIP, HttpRequestManager.METHOD_POST);
-		httpIntent.putParams("appkey", GameSDKApplication.getInstance().getAppkey());
-		httpIntent.putParams("gameid", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-			httpIntent.putParams("opid", GameSDKApplication.getInstance().getProvidersCode());// 运营商
-																								// ID，1:移动
-																								// 2:联通
-																								// 3:电信
-		}
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				MyParse.parseVipMsg(result, callBack);
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
-
-	/**
-	 * 请求会员礼包码列表接口
-	 * 
-	 * @param ykPayBean
-	 * @param callBack
-	 */
-	public void requestVipCodes(final HYCallBack callBack, String pageNum) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_VIPCODE_LIST, HttpRequestManager.METHOD_POST);
-		httpIntent.putParams("appkey", GameSDKApplication.getInstance().getAppkey());
-		httpIntent.putParams("gameid", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-			httpIntent.putParams("opid", GameSDKApplication.getInstance().getProvidersCode());// 运营商
-																								// ID，1:移动
-																								// 2:联通
-																								// 3:电信
-		}
-		httpIntent.putParams("page_num", pageNum);
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				JSONObject json;
-				try {
-					json = new JSONObject(result);
-					String status = json.getString("status");
-					if ("failed".equals(status)) {
-						statusFailed(json, callBack);
-					} else {
-						PayBean payBean = new PayBean();
-						payBean.setParams(result);
-						callBack.onSuccess(payBean);
-					}
-				} catch (JSONException e) {
-					e.printStackTrace();
-				}
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
 
 	/**
 	 * 请求支付接口
 	 * 
-	 * @param amount
-	 * @param orderID
-	 * @param callBackUrl
 	 * @param callBack
 	 */
 	public void requestPay(String payChannel, HYPayBean ykPayBean, final HYCallBack callBack) {
@@ -1677,9 +1229,6 @@ public class HttpApi {
 		}
 		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
 		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
 		if (ykPayBean.getAppExt1() != null && !ykPayBean.getAppExt1().equals("")) {
 			httpIntent.putParams("passthrough", URLEncoder.encode(ykPayBean.getAppExt1()));// 透传参数
 		}
@@ -1720,529 +1269,9 @@ public class HttpApi {
 		httpRequest.request(httpIntent, callBack1);
 	}
 
-	public void askRechargeGold(String payChannel, String inpourAmount, final HYCallBack callBack) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_PAY_INPOUR, HttpRequestManager.METHOD_POST);
-		httpIntent.putParams("first_pay_mark", "0");// 0为只充值不消费
-		httpIntent.putParams("gameid", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("inpour_amount", inpourAmount);
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("pay_channel", payChannel);
-		httpIntent.putParams("sdk_version", HYConstant.VERSION_ALIPAY);// 现在使用的支付宝版本号
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				try {
-					JSONObject json = new JSONObject(result);
-					String status = json.getString("status");
-					if ("failed".equals(status)) {
-						statusFailed(json, callBack);
-					} else {
-						PayBean payBean = new PayBean();
-						payBean.setParams(result);
-						callBack.onSuccess(payBean);
-					}
-				} catch (Exception e) {
-					e.printStackTrace();
-					exceptionFailed(HYConstant.EXCEPTION_CODE, e.getMessage(), callBack);
-				}
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
-
-	/**
-	 * @param payChannel
-	 * @param inpourAmount
-	 * @param cardCode
-	 * @param cardNo
-	 * @param cardOperator
-	 * @param cardPwd
-	 * @param amount
-	 * @param orderID
-	 * @param callBackUrl
-	 * @param callBack
-	 */
-	public void requestOperatorPay(String payChannel, String inpourAmount, String isRecharge, String cardCode,
-			String cardNo, String cardOperator, String cardPwd, HYPayBean ykPayBean, final HYCallBack callBack) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_PAY_INPOUR, HttpRequestManager.METHOD_POST);
-		httpIntent.putParams("amount", ykPayBean.getAmount());
-		httpIntent.putParams("apporderID", ykPayBean.getAppOrderId());
-		httpIntent.putParams("card_code", cardCode);
-		httpIntent.putParams("card_no", cardNo);
-		httpIntent.putParams("card_operator", cardOperator);
-		httpIntent.putParams("card_pwd", cardPwd);
-		httpIntent.putParams("first_pay_mark", isRecharge);// 1为充值后再消费
-		httpIntent.putParams("gameCallbackUrl", ykPayBean.getNotifyUri());
-		httpIntent.putParams("gameid", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("good_name", URLEncoder.encode(ykPayBean.getProductName()));
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("inpour_amount", inpourAmount);
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		if (ykPayBean.getAppExt1() != null && !ykPayBean.getAppExt1().equals(""))
-			httpIntent.putParams("passthrough", ykPayBean.getAppExt1());// 透传参数
-		httpIntent.putParams("pay_channel", payChannel);
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String data = httpRequestManager.getDataString();
-				try {
-					JSONObject json = new JSONObject(data);
-					String result = json.getString("result");
-					JSONObject resultjson = new JSONObject(result);
-					String channelError = resultjson.getString("channel_error");
-					String channelInfo = resultjson.getString("channel_info");
-					if ("2001".equals(channelError)) {
-						PayBean payBean = new PayBean();
-						payBean.setParams(data);
-						callBack.onSuccess(payBean);
-					} else {
-						// callBack.onFailed(channelInfo);
-					}
-				} catch (Exception e) {
-					e.printStackTrace();
-					exceptionFailed(HYConstant.EXCEPTION_CODE, e.getMessage(), callBack);
-				}
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
-
-	/**
-	 * @param payChannel
-	 * @param inpourAmount
-	 * @param cardCode
-	 * @param cardNo
-	 * @param cardOperator
-	 * @param cardPwd
-	 * @param callBack
-	 */
-	public void requestOperatorRecharge(String payChannel, String inpourAmount, String isRecharge, String cardCode,
-			String cardNo, String cardOperator, String cardPwd, final HYCallBack callBack) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_PAY_INPOUR, HttpRequestManager.METHOD_POST);
-		httpIntent.putParams("card_code", cardCode);
-		httpIntent.putParams("card_no", cardNo);
-		httpIntent.putParams("card_operator", cardOperator);
-		httpIntent.putParams("card_pwd", cardPwd);
-		httpIntent.putParams("first_pay_mark", isRecharge);// 1为充值后再消费
-		httpIntent.putParams("gameid", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("inpour_amount", inpourAmount);
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("pay_channel", payChannel);
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String data = httpRequestManager.getDataString();
-				try {
-					JSONObject json = new JSONObject(data);
-					String result = json.getString("result");
-					JSONObject resultjson = new JSONObject(result);
-					String channelError = resultjson.getString("channel_error");
-					String channelInfo = resultjson.getString("channel_info");
-					if ("2001".equals(channelError)) {
-						PayBean payBean = new PayBean();
-						payBean.setParams(data);
-						callBack.onSuccess(payBean);
-					} else {
-						// callBack.onFailed(channelInfo);
-					}
-				} catch (Exception e) {
-					e.printStackTrace();
-					exceptionFailed(HYConstant.EXCEPTION_CODE, e.getMessage(), callBack);
-				}
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
-
-	/**
-	 * 查询优豆余额
-	 * 
-	 * @param callBack
-	 */
-	public void checkBalance(final HYCallBack callBack) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_CHECK_BALANCE, HttpRequestManager.METHOD_POST);
-		httpIntent.putParams("gameid", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("opid", GameSDKApplication.getInstance().getProvidersCode());// 运营商
-																							// ID，1:移动
-																							// 2:联通
-																							// 3:电信
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				try {
-					JSONObject json = new JSONObject(result);
-					String balance = json.getString("balance");
-					PayBean payBean = new PayBean();
-					payBean.setParams(balance);
-					callBack.onSuccess(payBean);
-				} catch (Exception e) {
-					e.printStackTrace();
-					exceptionFailed(HYConstant.EXCEPTION_CODE, "请重试", callBack);
-				}
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
-
-	// 查询积分任务
-	public void checkTask(final HYCallBack callBack) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_CHECK_TASK, HttpRequestManager.METHOD_POST);
-		httpIntent.putParams("appkey", GameSDKApplication.getInstance().getAppkey());
-		httpIntent.putParams("game_id", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("platform", "2");
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				try {
-					PayBean payBean = new PayBean();
-					JSONObject json = new JSONObject(result);
-					String status = json.getString("status");
-					if ("success".equals(status)) {
-						payBean.setParams(json.getString("point"));
-					} else {
-						payBean.setParams(json.getString("0"));
-					}
-					callBack.onSuccess(payBean);
-				} catch (Exception e) {
-					e.printStackTrace();
-					exceptionFailed(HYConstant.EXCEPTION_CODE, "请重试", callBack);
-				}
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
-
-	/**
-	 * 查询历史订单
-	 * 
-	 * @param callBack
-	 * @param status
-	 * @param pgStart
-	 * @param pgEnd
-	 */
-	public void getPayDetail(final HYCallBack callBack, String url, String pgStart, String pgEnd) {
-		HttpIntent httpIntent = new HttpIntent(url, HttpRequestManager.METHOD_GET);
-		httpIntent.putParams("game_id", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("opid", GameSDKApplication.getInstance().getProvidersCode());// 运营商
-																							// ID，1:移动
-																							// 2:联通
-																							// 3:电信
-		httpIntent.putParams("pg_start", pgStart);// 从多少条开始取
-		httpIntent.putParams("pg_end", pgEnd);// 取到多少条结束
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("status", "0");// 状态码：0:全部 2:成功 3:失败
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				try {
-					PayBean payBean = new PayBean();
-					payBean.setParams(result);
-					callBack.onSuccess(payBean);
-				} catch (Exception e) {
-					e.printStackTrace();
-					exceptionFailed(HYConstant.EXCEPTION_CODE, "请重试", callBack);
-				}
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
-
-	/**
-	 * 获取礼包信息
-	 * 
-	 * @param callBack
-	 */
-	public void getPackages(final HYCallBack callBack) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_GET_PACKAGES, HttpRequestManager.METHOD_GET);
-		httpIntent.putParams("app_id", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("game_id", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("opid", GameSDKApplication.getInstance().getProvidersCode());// 运营商
-																							// ID，1:移动
-																							// 2:联通
-																							// 3:电信
-		httpIntent.putParams("pg", "1");
-		httpIntent.putParams("pz", "1");
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				PayBean payBean = new PayBean();
-				payBean.setParams(result);
-				callBack.onSuccess(payBean);
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
-
-	/**
-	 * 获取消费福利档位信息
-	 * 
-	 * @param callBack
-	 */
-	public void getConsumeBenefitsMsg(final HYCallBack callBack) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_GET_CONSUME_BENEFITS_MSG, HttpRequestManager.METHOD_GET);
-		httpIntent.putParams("app_id", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("game_id", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("opid", GameSDKApplication.getInstance().getProvidersCode());// 运营商
-																							// ID，1:移动
-																							// 2:联通
-																							// 3:电信
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				PayBean bean = new PayBean();
-				bean.setParams(result);
-				callBack.onSuccess(bean);
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
-
-	/**
-	 * 获取消费福利礼品信息
-	 * 
-	 * @param callBack
-	 */
-	public void getConsumeBenefitsPresent(final HYCallBack callBack, String amount) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_GET_CONSUME_BENEFITS_PRESENTS,
-				HttpRequestManager.METHOD_GET);
-		httpIntent.putParams("amount", amount);
-		httpIntent.putParams("app_id", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("game_id", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("opid", GameSDKApplication.getInstance().getProvidersCode());// 运营商
-																							// ID，1:移动
-																							// 2:联通
-																							// 3:电信
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				PayBean bean = new PayBean();
-				bean.setParams(result);
-				callBack.onSuccess(bean);
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
-
-	/**
-	 * 领取某个礼品提交个人信息
-	 * 
-	 * @param callBack
-	 * @param gift_id
-	 *            礼品id
-	 * @param userName
-	 *            用户输入的姓名
-	 * @param phone
-	 *            用户输入的电话号码
-	 */
-
-	public void submitPersonnelMsgForPresent(final HYCallBack callBack, String gift_id, String userName, String phone) {
-		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_SUBMIT_CONSUME_BENEFITS_PERSONNEL_MSG,
-				HttpRequestManager.METHOD_POST);
-		httpIntent.putParams("appkey", GameSDKApplication.getInstance().getAppkey());
-		httpIntent.putParams("game_id", GameSDKApplication.getInstance().getAppid());
-		httpIntent.putParams("gamever", GameSDKApplication.getInstance().getVersionCode() + "");
-		httpIntent.putParams("gift_id", gift_id);
-		httpIntent.putParams("guid", GameSDKApplication.getInstance().getGuid());
-		if (!"".equals(GameSDKApplication.getInstance().getImei())) {
-			httpIntent.putParams("imei", GameSDKApplication.getInstance().getImei());
-		}
-		httpIntent.putParams("mac", GameSDKApplication.getInstance().getMac());
-		httpIntent.putParams("network", Util.netWorkType());
-		if (!"".equals(GameSDKApplication.getInstance().getProvidersName())) {
-			httpIntent.putParams("operator", GameSDKApplication.getInstance().getProvidersName());
-		}
-		httpIntent.putParams("phone", phone);// 用户输入的电话号码
-		httpIntent.putParams("sguid", GameSDKApplication.getInstance().getSGuid());
-		httpIntent.putParams("uid", GameSDKApplication.getInstance().getShareUser().getUid());
-		httpIntent.putParams("user_name", URLEncoder.encode(userName));// 用户输入的姓名
-
-		HttpRequestManager httpRequest = new HttpRequestManager();
-		IHttpRequestCallBack callBack1 = new IHttpRequestCallBack() {
-			@Override
-			public void onSuccess(HttpRequestManager httpRequestManager) {
-				String result = httpRequestManager.getDataString();
-				PayBean bean = new PayBean();
-				bean.setParams(result);
-				callBack.onSuccess(bean);
-			}
-
-			@Override
-			public void onFailed(int code, String failReason) {
-				exceptionFailed(code, failReason, callBack);
-			}
-		};
-		httpRequest.request(httpIntent, callBack1);
-	}
-
 	/**
 	 * 获取access_token
 	 * 
-	 * @param callBack
 	 */
 	public void getAccessToken() {
 		HttpIntent httpIntent = new HttpIntent(HYConstant.URL_GET_ACCESS_TOKEN, HttpRequestManager.METHOD_POST);

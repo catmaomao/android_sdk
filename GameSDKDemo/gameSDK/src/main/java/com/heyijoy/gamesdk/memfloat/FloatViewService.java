@@ -1,7 +1,7 @@
 package com.heyijoy.gamesdk.memfloat;
 
 import com.heyijoy.gamesdk.act.HYPlatform;
-import com.heyijoy.gamesdk.lib.HYConstant;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.util.HomeListener;
 import com.heyijoy.gamesdk.util.HomeListener.OnHomePressedListener;
 
@@ -11,8 +11,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.IBinder;
-import android.util.Log;
-import android.widget.Toast;
 
 public class FloatViewService extends Service {
 

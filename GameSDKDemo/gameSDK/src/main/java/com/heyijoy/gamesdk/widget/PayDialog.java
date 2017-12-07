@@ -1,14 +1,7 @@
 package com.heyijoy.gamesdk.widget;
 
-import java.text.SimpleDateFormat;
-import java.util.HashMap;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.ActivityManager;
 import android.app.Dialog;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -16,49 +9,40 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
 import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.WindowManager;
-import android.view.WindowManager.LayoutParams;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alipay.sdk.app.PayTask;
+import com.heyijoy.gamesdk.R;
 import com.heyijoy.gamesdk.act.GameSDKApplication;
-import com.heyijoy.gamesdk.act.UniFunctions;
 import com.heyijoy.gamesdk.act.HYCallBack;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.data.Bean;
+import com.heyijoy.gamesdk.data.HYPayBean;
 import com.heyijoy.gamesdk.data.PayBean;
 import com.heyijoy.gamesdk.data.User;
-import com.heyijoy.gamesdk.data.HYPayBean;
 import com.heyijoy.gamesdk.http.HttpApi;
 import com.heyijoy.gamesdk.http.HttpRequestManager;
-import com.heyijoy.gamesdk.lib.HYConstant;
-import com.heyijoy.gamesdk.memfloat.FloatService;
-import com.heyijoy.gamesdk.memfloat.FloatView;
 import com.heyijoy.gamesdk.memfloat.FloatViewService;
-import com.heyijoy.gamesdk.orderlist.OrderListDialog;
 import com.heyijoy.gamesdk.util.Logger;
-import com.heyijoy.gamesdk.util.MyParse;
 import com.heyijoy.gamesdk.util.PayResult;
 import com.heyijoy.gamesdk.util.Util;
 import com.tencent.mm.sdk.modelpay.PayReq;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
-import com.alipay.sdk.app.PayTask;
-import com.heyijoy.gamesdk.R;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * 支付弹框
@@ -159,7 +143,6 @@ public class PayDialog extends Dialog {
 		txtProduct.setText(product);
 
 		back.setOnClickListener(new GoBackOnClickListener());
-		detail.setOnClickListener(new DetailOnClickListener());
 		btAlipay.setOnClickListener(new AlipayOnClickListener());
 		btWXpay.setOnClickListener(new WXOnClickListener());
 		btUnionpay.setOnClickListener(new UnionpayOnClickListener());
@@ -186,40 +169,6 @@ public class PayDialog extends Dialog {
 	}
 
 	/**
-	 * 交易明细
-	 * 
-	 * @param parent
-	 */
-	public void showPopupWindow(View parent) {
-		// 加载布局
-		LinearLayout layout = (LinearLayout) LayoutInflater.from(activity).inflate(R.layout.dialog_hy_pay_to_orderlist,
-				null);
-		// 找到布局的控件
-		TextView txtToOrderList = (TextView) layout.findViewById(R.id.hy_pay_to_orderlist_txt);
-		// 实例化popupWindow
-		final PopupWindow popupWindow = new PopupWindow(layout, LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-		// 控制键盘是否可以获得焦点
-		popupWindow.setFocusable(true);
-		// 设置popupWindow弹出窗体的背景
-		popupWindow.setBackgroundDrawable(new BitmapDrawable(null, ""));
-		WindowManager manager = (WindowManager) activity.getSystemService(Context.WINDOW_SERVICE);
-		@SuppressWarnings("deprecation")
-		// 获取xoff
-		int xpos = parent.getMeasuredWidth();
-		// xoff,yoff基于anchor的左下角进行偏移。
-		popupWindow.showAsDropDown(parent, -xpos - 4, 0);
-		// 监听交易明细点击事件
-		txtToOrderList.setOnClickListener(new android.view.View.OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				popupWindow.dismiss();
-				OrderListDialog orderListDialog = new OrderListDialog(activity);
-				orderListDialog.show();
-			}
-		});
-	}
-
-	/**
 	 * -------------------------选择支付方式的按钮------------------------------- 退出支付
 	 * 
 	 * @author shaohuma
@@ -229,19 +178,6 @@ public class PayDialog extends Dialog {
 		@Override
 		public void onClick(View v) {
 			showExitPayAlert();
-		}
-	};
-
-	/**
-	 * 交易明细
-	 * 
-	 * @author shaohuma
-	 *
-	 */
-	class DetailOnClickListener implements android.view.View.OnClickListener {
-		@Override
-		public void onClick(View v) {
-			showPopupWindow(detail);
 		}
 	};
 
@@ -341,7 +277,7 @@ public class PayDialog extends Dialog {
 				}
 
 				if (failReason.equals(HttpRequestManager.COOKIE_OVERDUE)) {
-					UniFunctions.reLogin(activity);
+//					UniFunctions.reLogin(activity);
 				} else {
 					cancelPay(failReason);
 				}
@@ -432,12 +368,12 @@ public class PayDialog extends Dialog {
 		}
 	}
 
-	private void moveTaskToFront() { // api level 11
-		ActivityManager am = (ActivityManager) activity.getSystemService(Context.ACTIVITY_SERVICE);
-
-		am.moveTaskToFront(activity.getTaskId(), 0);
-		// return isForeground(activity.getPackageName());
-	}
+//	private void moveTaskToFront() { // api level 11
+//		ActivityManager am = (ActivityManager) activity.getSystemService(Context.ACTIVITY_SERVICE);
+//
+//		am.moveTaskToFront(activity.getTaskId(), 0);
+//		// return isForeground(activity.getPackageName());
+//	}
 
 	private class WXPayCallBackReceiver extends BroadcastReceiver {
 		@Override
@@ -445,7 +381,7 @@ public class PayDialog extends Dialog {
 			Logger.v("微信广播");
 			try {
 				if (wxpayReceiver != null) {
-					moveTaskToFront();
+//					moveTaskToFront();
 					activity.unregisterReceiver(wxpayReceiver);
 					wxpayReceiver = null;
 				}

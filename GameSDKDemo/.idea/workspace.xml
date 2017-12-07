@@ -32,12 +32,149 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="HYInitActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYInitActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="89" column="35" lean-forward="false" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2851#3056#0" expanded="true" />
+                <element signature="e#3055#3056#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HYPlatform.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/HYPlatform.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="144" column="23" lean-forward="false" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2745#3058#0" expanded="true" />
+                <element signature="e#3057#3058#0" expanded="true" />
+                <element signature="e#3302#3469#0" expanded="true" />
+                <element signature="e#3468#3469#0" expanded="true" />
+                <element signature="e#3578#3751#0" expanded="true" />
+                <element signature="e#3750#3751#0" expanded="true" />
+                <element signature="e#17948#18083#0" expanded="true" />
+                <element signature="e#18082#18083#0" expanded="true" />
+                <element signature="e#19790#20155#0" expanded="true" />
+                <element signature="e#20154#20155#0" expanded="true" />
+                <element signature="e#20315#20316#0" expanded="true" />
+                <element signature="e#20349#20350#0" expanded="true" />
+                <element signature="e#22964#22965#0" expanded="true" />
+                <element signature="e#22997#22998#0" expanded="true" />
+                <element signature="e#23039#23040#0" expanded="true" />
+                <element signature="e#23074#23075#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HYInit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/HYInit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1023#1254#0" expanded="true" />
+                <element signature="e#1253#1254#0" expanded="true" />
+                <element signature="e#1711#1712#0" expanded="true" />
+                <element signature="e#1754#1755#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameSDKApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/GameSDKApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="403" column="37" lean-forward="false" selection-start-line="403" selection-start-column="37" selection-end-line="403" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6877#7202#0" expanded="true" />
+                <element signature="e#7201#7202#0" expanded="true" />
+                <element signature="e#23736#23737#0" expanded="true" />
+                <element signature="e#23767#23768#0" expanded="true" />
+                <element signature="e#30692#30693#0" expanded="true" />
+                <element signature="e#30742#30743#0" expanded="true" />
+                <element signature="e#30796#30797#0" expanded="true" />
+                <element signature="e#30818#30819#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameSDK/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpApi.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/http/HttpApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="818" column="35" lean-forward="false" selection-start-line="818" selection-start-column="35" selection-end-line="818" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpRequestManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/http/HttpRequestManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7082">
+              <caret line="348" column="19" lean-forward="false" selection-start-line="348" selection-start-column="19" selection-end-line="348" selection-end-column="19" />
+              <folding>
+                <element signature="e#10391#10407#0" expanded="true" />
+                <element signature="e#18328#18344#0" expanded="true" />
+                <element signature="e#24832#24954#0" expanded="true" />
+                <element signature="e#24953#24954#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebViewActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/WebViewActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VersionInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/data/VersionInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>testJNI</find>
       <find>import com.heyijoy.gamesdk.lib.R;</find>
+      <find>callBack</find>
     </findStrings>
     <replaceStrings>
       <replace>getVerifyCode</replace>
@@ -3389,15 +3526,10 @@
         <option value="$PROJECT_DIR$/gameSDK/build.gradle" />
         <option value="$PROJECT_DIR$/gameSDKDemo/build.gradle" />
         <option value="$PROJECT_DIR$/portalsdk/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/gameSDK/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/gameSDKDemo/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/gameSDK/build/intermediates/bundles/debug/res/values/values.xml" />
         <option value="$PROJECT_DIR$/gameSDK/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/memfloat/FloatView.java" />
-        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/GameSDKApplication.java" />
-        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/HYInit.java" />
-        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/HYPlatform.java" />
-        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYInitActivity.java" />
         <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYQQLoginActivity.java" />
         <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYRelayActivity.java" />
         <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYShareQQActivity.java" />
@@ -3411,12 +3543,28 @@
         <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/orderlist/AutoListView.java" />
         <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/orderlist/BenefitDialog.java" />
         <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/update/DownloadService.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/NickNameRegDialog.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/constants/HYBuildConfig.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/PayDialog.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYInitActivity.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/LoginCallBack.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/res/layout/dialog_hy_update.xml" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/WebViewFullscreenActivity.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/util/Util.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/util/Logger.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/WebViewWelfareActivity.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/http/HttpRequestManager.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/HYInit.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/GameSDKApplication.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/HYPlatform.java" />
+        <option value="$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/http/HttpApi.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1280" />
-    <option name="y" value="-34" />
+    <option name="y" value="-33" />
     <option name="width" value="1920" />
     <option name="height" value="1177" />
   </component>
@@ -3513,98 +3661,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gameSDKDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameSDKDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameSDKDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gameSDKDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameSDKDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameSDKDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gameSDKDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameSDKDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameSDKDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gameSDKDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameSDKDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GameSDKDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="gameSDK" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -3628,6 +3684,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameSDKDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameSDKDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gameSDK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widget" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3691,7 +3781,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="update" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3725,7 +3815,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="constants" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameSDKDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameSDKDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gameSDK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameSDKDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameSDKDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gameSDK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="act" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3824,7 +3982,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512633367583" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512639602929" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3872,7 +4030,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512633367583" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512639602929" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3904,6 +4062,27 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -4034,7 +4213,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512633367583" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512639602930" />
       </method>
     </configuration>
     <list size="1">
@@ -4073,31 +4252,34 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-34" width="1920" height="1177" extended-state="0" />
+    <frame x="1280" y="-33" width="1920" height="1177" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924527" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924527" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4254717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924527" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924527" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4254717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20788912" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924527" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4105,7 +4287,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924527" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4149,139 +4330,233 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/import-summary.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDKDemo/src/main/assets/CloseNormal.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDKDemo/src/main/assets/HelloWorld.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDKDemo/src/main/java/com/tencent/tmgp/blockcell/AccessTokenKeeper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/LoginDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="559" column="54" lean-forward="false" selection-start-line="559" selection-start-column="54" selection-end-line="559" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDKDemo/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portalsdk/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding>
-            <element signature="e#411#429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portalsdk/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYActivityApplication.java">
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/announcement/Announcement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/announcement/AnnouncementCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/announcement/AnnouncementClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/announcement/AnnouncementListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/announcement/Skipable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/update/HYUpdateManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/sql/DBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/sql/MsgDBTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/sql/DBConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1034">
+          <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/operatorpay/OpPay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDKDemo/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/res/values/mini_styles.xml">
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/data/OrderBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-179">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/data/GamePlayersProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="57">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/res/values/style.xml">
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/data/OperatorBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="76">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/res/values/styles.xml">
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/data/TaskBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="108" column="12" lean-forward="true" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/build/intermediates/bundles/debug/res/values/values.xml">
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/data/UserContentResover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="813" column="4" lean-forward="false" selection-start-line="813" selection-start-column="4" selection-end-line="813" selection-end-column="4" />
+        <state relative-caret-position="228">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/data/VideSettingDataBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/data/BlockParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/data/BenefitBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/data/CommitData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/constants/HYBuildConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/memfloat/PerCenterDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/memfloat/ResourceUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/memfloat/HYSDKPushRelayReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/memfloat/HYSDKPushRelayService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/HYPayActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/PayDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2755">
+          <caret line="145" column="26" lean-forward="false" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5060#5401#0" expanded="true" />
+            <element signature="e#5400#5401#0" expanded="true" />
+            <element signature="e#12278#12548#0" expanded="true" />
+            <element signature="e#12547#12548#0" expanded="true" />
+            <element signature="e#12736#14029#0" expanded="true" />
+            <element signature="e#12754#12781#0" expanded="true" />
+            <element signature="e#14028#14029#0" expanded="true" />
+            <element signature="e#20072#20432#0" expanded="true" />
+            <element signature="e#20431#20432#0" expanded="true" />
+            <element signature="e#21440#21621#0" expanded="true" />
+            <element signature="e#21620#21621#0" expanded="true" />
+            <element signature="e#21758#21922#0" expanded="true" />
+            <element signature="e#21921#21922#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gameSDKDemo/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="236" column="27" lean-forward="false" selection-start-line="236" selection-start-column="27" selection-end-line="236" selection-end-column="27" />
+        <state relative-caret-position="152">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="78" />
           <folding>
             <marker date="1512631846541" expanded="false" signature="4071:4093" ph="&quot;支付宝快捷支付服务&quot;" />
           </folding>
@@ -4291,145 +4566,253 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/lib/R.java" />
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/memfloat/FloatView.java">
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+        <state relative-caret-position="95">
+          <caret line="5" column="78" lean-forward="false" selection-start-line="5" selection-start-column="78" selection-end-line="5" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/HYProgressDlg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/GameSDKApplication.java">
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/util/MyParse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/HYInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/HYPlatform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYInitActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYQQLoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="2641">
+          <caret line="156" column="25" lean-forward="false" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYRelayActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYShareQQActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYWBShareActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYWeiBoLoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/announcement/AnnouncementListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/announcement/AnnouncementListDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/memfloat/FloatService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="-1258">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/memfloat/HYNotifyBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="228">
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/memfloat/PerCenterDialog.java">
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/LoginCallBack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/orderlist/AutoListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/orderlist/BenefitDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/update/DownloadService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        <state relative-caret-position="391">
+          <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding>
-            <element signature="e#3582#7842#0" expanded="true" />
-            <element signature="e#7701#7722#0" expanded="true" />
-            <element signature="e#7841#7842#0" expanded="true" />
-            <element signature="e#9456#9477#0" expanded="true" />
-            <element signature="e#9719#10043#0" expanded="true" />
-            <element signature="e#9990#10011#0" expanded="true" />
-            <element signature="e#10042#10043#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/res/layout/dialog_hy_update.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-551">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#407#432#0" expanded="false" />
+            <element signature="e#469#493#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/http/LoadImageAsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/WebViewFullscreenActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-331">
+          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/util/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/util/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="1117" column="5" lean-forward="false" selection-start-line="1117" selection-start-column="5" selection-end-line="1117" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/WebViewWelfareActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1167">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/res/layout/hy_activity_webview_fullscreen.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/WebViewVipActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1597">
+          <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/data/OrderFloatBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/data/VersionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/widget/WebViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/http/HttpRequestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7082">
+          <caret line="348" column="19" lean-forward="false" selection-start-line="348" selection-start-column="19" selection-end-line="348" selection-end-column="19" />
+          <folding>
+            <element signature="e#10391#10407#0" expanded="true" />
+            <element signature="e#18328#18344#0" expanded="true" />
+            <element signature="e#24832#24954#0" expanded="true" />
+            <element signature="e#24953#24954#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/GameSDKApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="403" column="37" lean-forward="false" selection-start-line="403" selection-start-column="37" selection-end-line="403" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6877#7202#0" expanded="true" />
+            <element signature="e#7201#7202#0" expanded="true" />
+            <element signature="e#23736#23737#0" expanded="true" />
+            <element signature="e#23767#23768#0" expanded="true" />
+            <element signature="e#30692#30693#0" expanded="true" />
+            <element signature="e#30742#30743#0" expanded="true" />
+            <element signature="e#30796#30797#0" expanded="true" />
+            <element signature="e#30818#30819#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/HYInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1023#1254#0" expanded="true" />
+            <element signature="e#1253#1254#0" expanded="true" />
+            <element signature="e#1711#1712#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/activity/HYInitActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="89" column="35" lean-forward="false" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2851#3056#0" expanded="true" />
+            <element signature="e#3055#3056#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/act/HYPlatform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="144" column="23" lean-forward="false" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2745#3058#0" expanded="true" />
+            <element signature="e#3057#3058#0" expanded="true" />
+            <element signature="e#3302#3469#0" expanded="true" />
+            <element signature="e#3468#3469#0" expanded="true" />
+            <element signature="e#3578#3751#0" expanded="true" />
+            <element signature="e#3750#3751#0" expanded="true" />
+            <element signature="e#17948#18083#0" expanded="true" />
+            <element signature="e#18082#18083#0" expanded="true" />
+            <element signature="e#19790#20155#0" expanded="true" />
+            <element signature="e#20154#20155#0" expanded="true" />
+            <element signature="e#20315#20316#0" expanded="true" />
+            <element signature="e#20349#20350#0" expanded="true" />
+            <element signature="e#22964#22965#0" expanded="true" />
+            <element signature="e#22997#22998#0" expanded="true" />
+            <element signature="e#23039#23040#0" expanded="true" />
+            <element signature="e#23074#23075#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/constants/HYConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="241" column="25" lean-forward="false" selection-start-line="241" selection-start-column="25" selection-end-line="241" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameSDK/src/main/java/com/heyijoy/gamesdk/http/HttpApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="818" column="35" lean-forward="false" selection-start-line="818" selection-start-column="35" selection-end-line="818" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -9,16 +9,14 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.heyijoy.gamesdk.act.GameSDKApplication;
 import com.heyijoy.gamesdk.data.HYThridParams;
-import com.heyijoy.gamesdk.lib.HYConstant;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.R;
 import com.heyijoy.gamesdk.util.Util;
 import com.heyijoy.gamesdk.widget.HYProgressDlg;
-import com.heyijoy.sdk.ShareParams;
 import com.sina.weibo.sdk.WbSdk;
 import com.sina.weibo.sdk.api.ImageObject;
 import com.sina.weibo.sdk.api.TextObject;

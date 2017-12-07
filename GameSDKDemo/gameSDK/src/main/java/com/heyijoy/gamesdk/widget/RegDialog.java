@@ -20,7 +20,7 @@ import com.heyijoy.gamesdk.data.User;
 import com.heyijoy.gamesdk.data.HYLoginFailReason;
 import com.heyijoy.gamesdk.http.HttpApi;
 import com.heyijoy.gamesdk.http.HttpRequestManager;
-import com.heyijoy.gamesdk.lib.HYConstant;
+import com.heyijoy.gamesdk.constants.HYConstant;
 import com.heyijoy.gamesdk.util.Logger;
 import com.heyijoy.gamesdk.util.Util;
 import com.heyijoy.gamesdk.R;
